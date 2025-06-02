@@ -1,0 +1,64 @@
+﻿html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+form, .container-fluid, .row, .left-panel, .login-panel {
+    height: 100%;
+}
+
+.left-panel {
+    background-color: #001f5f;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-panel img {
+    width: 110%;
+    height: auto;
+}
+
+.left-panel h1, .left-panel h2 {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.left-panel small {
+    margin-top: 2rem;
+    text-align: center;
+    display: block;
+}
+
+.login-panel form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14rem;
+}
+
+.form-control {
+    border-radius: 0.5rem;
+}
+
+.btn-primary {
+    background-color: #001f5f;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.forgot-link {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+    .forgot-link a {
+        text-decoration: none;
+        color: #001f5f;
+    }

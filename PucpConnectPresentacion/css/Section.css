@@ -1,0 +1,188 @@
+﻿.card-custom {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+}
+
+.profile {
+    width: 10vw;
+    max-width: 120px;
+    aspect-ratio: 1 / 1;
+    margin-top: -80px; /* Sube el perfil */
+    margin-bottom: 10px; /* Espacio con el texto */
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: 4px solid white;
+    position: relative; /* Ya no es absolute */
+}
+
+.card-body {
+    position: relative;
+    padding-top: 35px;
+}
+
+.btn-match {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #EE004B;
+    --bs-btn-border-color: #EE004B;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d80044;
+    --bs-btn-hover-border-color: #b02a37;
+    --bs-btn-focus-shadow-rgb: 225, 83, 97;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #EE004B;
+    --bs-btn-active-border-color: #a52834;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #dc3545;
+    --bs-btn-disabled-border-color: #dc3545;
+    padding: 0.5rem 1.7rem; /* Más alto y más ancho */
+    border-radius: 2rem; /* Más redondeado */
+    font-size: 1.1rem; /* Opcional: texto un poco más grande */
+    font-weight: 600;
+    width: 80%; /* Hace que crezca al ancho del contenedor */
+    max-width: 300px; /* O el valor que necesites */
+    display: inline-block; /* Asegura que respete el ancho */
+    text-align: center;
+}
+
+/* Efecto de brillo */
+.btn-match::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient( 120deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.1) 100% );
+    transform: skewX(-20deg);
+    z-index: 2;
+    pointer-events: none;
+    transition: none;
+}
+
+.titulo-nombre {
+    padding-left: 6.6em;
+    padding-bottom: 0.2em;
+    position: relative;
+}
+
+.card-img-top {
+    height: 180px; /* Ajusta según tu necesidad */
+    object-fit: cover; /* Mantiene la proporción recortando */
+    object-position: center; /* Centra el contenido recortado */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    display: block; /* Previene saltos inesperados */
+}
+
+.descripcion {
+    padding-left: 8.3em;
+}
+
+.info-perfil {
+    margin-top: -4.3em; /* Sube el bloque ignorando la imagen */
+}
+
+/* Repetición continua del brillo */
+.btn-match:hover::before {
+    animation: shine 1.5s ease-in-out infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: -75%;
+    }
+
+    100% {
+        left: 125%;
+    }
+}
+
+.event-card {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.event-card:hover {
+    transform: scale(1.01);
+}
+
+.event-image {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.event-body {
+    padding: 1rem 1.2rem;
+}
+
+.event-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.event-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.event-description {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.btn-asistir {
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 1.5rem;
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+    border: none;
+}
+.btn-asistir-profile {
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 1.5rem;
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+    border: none;
+}
+
+.btn-asistir:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.favorite-icon {
+    font-size: 1.3rem;
+    color: #555;
+}
+
+.event-date {
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.icon-red {
+    color: #e53935;
+}

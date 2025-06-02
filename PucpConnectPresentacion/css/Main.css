@@ -1,0 +1,86 @@
+﻿body {
+    background-color: #f8f9fa;
+}
+
+.custom-navbar {
+    height: 5em;
+}
+
+    .custom-navbar .navbar-brand,
+    .custom-navbar .navbar-text {
+        font-size: 1.25rem;
+    }
+
+.sidebar {
+    width: 20vw;
+    background-color: #f3f3f3;
+    height: 100vh;
+    position: fixed;
+    top: 11%; /* navbar height */
+    left: 0;
+    padding-top: 2vh;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1); /* sombra a la derecha */
+}
+
+
+.img-logo {
+    width: 10%;
+    height: auto;
+}
+
+.profile-img {
+    width: 110%;
+    height: auto;
+}
+
+.content {
+    margin-left: 20vw;
+    margin-top: 12vh;
+    padding: 20px;
+}
+
+.notify-icon {
+    font-size: 1.3rem;
+    color: white;
+    padding-right: 1.4rem;
+}
+
+.avatar img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 10px;
+}
+
+.post-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.reaction-icons {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+    .sidebar a:hover {
+        background-color: #ddd;
+    }
+
+.sidebar i {
+    margin-right: 5%;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+}
