@@ -6,10 +6,10 @@
     height: 5em;
 }
 
-    .custom-navbar .navbar-brand,
-    .custom-navbar .navbar-text {
-        font-size: 1.25rem;
-    }
+.custom-navbar .navbar-brand,
+.custom-navbar .navbar-text {
+    font-size: 1.25rem;
+}
 
 .sidebar {
     width: 20vw;
@@ -72,9 +72,9 @@
     text-decoration: none;
 }
 
-    .sidebar a:hover {
-        background-color: #ddd;
-    }
+.sidebar a:hover {
+    background-color: #ddd;
+}
 
 .sidebar i {
     margin-right: 5%;

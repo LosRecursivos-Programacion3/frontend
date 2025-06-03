@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace PucpConnectPresentacion.Masters
+namespace PucpConnectPresentacion.templates
 {
-    public partial class Site1 : System.Web.UI.MasterPage
+    public partial class CreateEvent : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

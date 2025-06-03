@@ -24,8 +24,8 @@
         <a href="#"><i class="fa-solid fa-message"></i> Mensajes</a>
         <a href="Profile-Friends.aspx"><i class="fa-solid fa-user-group"></i> Amigos</a>
         <a href="Events.aspx"><i class="fa-regular fa-calendar"></i> Eventos</a>
-        <a href="#"><i class="fa-solid fa-calendar-plus"></i> Crear Evento</a>
-        <a href="#"><i class="fa-solid fa-square-plus"></i> Crear Publicación</a>
+        <a href="CreateEvent.aspx"><i class="fa-solid fa-calendar-plus"></i> Crear Evento</a>
+        <a href="CreatePost.aspx"><i class="fa-solid fa-square-plus"></i> Crear Publicación</a>
         <a href="Stories.aspx"><i class="fa-solid fa-window-restore"></i> Historias</a>
     </div>
     <!-- Contenido Principal (Aqui va el for para listar todas) -->

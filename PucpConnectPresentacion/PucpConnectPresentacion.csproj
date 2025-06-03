@@ -69,6 +69,8 @@
   <ItemGroup>
     <Content Include="css\Section.css" />
     <Content Include="css\Stories.css" />
+    <Content Include="templates\CreateEvent.aspx" />
+    <Content Include="templates\CreatePost.aspx" />
     <Content Include="templates\Profile-Events.aspx" />
     <Content Include="templates\Profile-Friends.aspx" />
     <Content Include="templates\Stories.aspx" />
@@ -84,12 +86,25 @@
     <Content Include="templates\Login.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Masters\Site1.Master.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
+    <Compile Include="Masters\Create.Master.cs">
+      <DependentUpon>Create.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Create.Master.designer.cs">
+      <DependentUpon>Create.Master</DependentUpon>
+    </Compile>
+    <Compile Include="templates\CreateEvent.aspx.cs">
+      <DependentUpon>CreateEvent.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Masters\Site1.Master.designer.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
+    <Compile Include="templates\CreateEvent.aspx.designer.cs">
+      <DependentUpon>CreateEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\CreatePost.aspx.cs">
+      <DependentUpon>CreatePost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\CreatePost.aspx.designer.cs">
+      <DependentUpon>CreatePost.aspx</DependentUpon>
     </Compile>
     <Compile Include="templates\Profile-Events.aspx.cs">
       <DependentUpon>Profile-Events.aspx</DependentUpon>
@@ -187,7 +202,7 @@
   <ItemGroup>
     <Content Include="Masters\MainLayout.Master" />
     <Content Include="Masters\LoginLayout.Master" />
-    <Content Include="Masters\Site1.Master" />
+    <Content Include="Masters\Create.Master" />
     <None Include="packages.config" />
     <Content Include="Masters\Profile.Master" />
     <Content Include="Masters\SectionLayout.Master" />
