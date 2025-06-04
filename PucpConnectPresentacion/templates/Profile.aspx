@@ -24,11 +24,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-btn">
+            <div class="col-btn">
                      <div class="ms-auto">
-                         <button class="btn btn-primary">Configurar Perfil</button>
-                     </div>
-                </div>
+                         <asp:Button ID="btnConfigurar" runat="server" Text="Configurar Perfil" OnClick="btnConfigurar_Click" CssClass="btn btn-primary" />
+                        <asp:Button ID="btnConfigureInterests" runat="server" Text="Configurar Intereses" OnClick="btnConfigureInterests_Click"  CssClass="btn btn-primary" />
+                     </div>    
             </div>
         </div>
 
