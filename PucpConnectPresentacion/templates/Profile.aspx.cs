@@ -13,5 +13,14 @@ namespace PucpConnectPresentacion
         {
 
         }
+
+        protected void btnConfigurar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ProfileModify.aspx");
+        }
+
+        protected void btnConfigureInterests_Click(object sender, EventArgs e) {
+            Response.Redirect("InteresModify.aspx");
+        }
     }
 }

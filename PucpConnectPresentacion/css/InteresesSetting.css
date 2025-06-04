@@ -1,0 +1,145 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f9ff;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 120px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    border-right: 1px solid #dfe6ed;
+}
+
+.return-button {
+    display: block;
+    color: #1e90ff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+    .return-button:hover {
+        text-decoration: underline;
+    }
+
+.content {
+    margin-left: 200px;
+    padding: 2rem;
+}
+
+.interests-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    color: #1a365d;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.subtitle {
+    color: #1e90ff;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+    .subtitle i {
+        margin-right: 8px;
+    }
+
+.selection-info {
+    background-color: #e3f0ff;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #1a365d;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.interest-checkbox {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+    .interest-checkbox:hover {
+        background-color: #ebf8ff;
+        border-color: #90cdf4;
+    }
+
+    .interest-checkbox input[type="checkbox"] {
+        margin-right: 10px;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+.save-button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .save-button:hover {
+        background-color: #0074d9;
+    }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .interests-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+}
