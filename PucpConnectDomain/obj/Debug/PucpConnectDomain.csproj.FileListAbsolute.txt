@@ -1,0 +1,6 @@
+C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectDomain\bin\Debug\PucpConnectDomain.dll
+C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectDomain\bin\Debug\PucpConnectDomain.pdb
+C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectDomain\obj\Debug\PucpConnectDomain.csproj.AssemblyReference.cache
+C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectDomain\obj\Debug\PucpConnectDomain.csproj.CoreCompileInputs.cache
+C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectDomain\obj\Debug\PucpConnectDomain.dll
+C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectDomain\obj\Debug\PucpConnectDomain.pdb

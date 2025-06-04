@@ -46,6 +46,8 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,6 +69,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\UsuarioWS\configuration91.svcinfo" />
+    <None Include="Connected Services\UsuarioWS\configuration.svcinfo" />
+    <Content Include="Connected Services\UsuarioWS\PucpConnectPresentacion.UsuarioWS.registrarAlumnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\UsuarioWS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="css\Section.css" />
     <Content Include="css\Stories.css" />
     <Content Include="templates\CreateEvent.aspx" />
@@ -82,12 +93,20 @@
     <Content Include="templates\Events.aspx" />
     <Content Include="templates\Main.aspx" />
     <Content Include="templates\Profile.aspx" />
+    <Content Include="templates\Logout.aspx" />
+    <Content Include="templates\Register.aspx" />
     <Content Include="Web.config" />
     <Content Include="templates\Login.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\UsuarioWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Masters\Create.Master.cs">
       <DependentUpon>Create.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Masters\Create.Master.designer.cs">
       <DependentUpon>Create.Master</DependentUpon>
@@ -198,11 +217,29 @@
     <Compile Include="Masters\SectionLayout.Master.designer.cs">
       <DependentUpon>SectionLayout.Master</DependentUpon>
     </Compile>
+    <Compile Include="templates\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Masters\MainLayout.Master" />
     <Content Include="Masters\LoginLayout.Master" />
     <Content Include="Masters\Create.Master" />
+    <None Include="Connected Services\UsuarioWS\UsuarioWS.wsdl" />
+    <None Include="Connected Services\UsuarioWS\UsuarioWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
     <Content Include="Masters\Profile.Master" />
     <Content Include="Masters\SectionLayout.Master" />
@@ -215,6 +252,18 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PucpConnectDomain\PucpConnectDomain.csproj">
+      <Project>{ad829c81-46d2-4cd0-9c2a-554e49a75e95}</Project>
+      <Name>PucpConnectDomain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\UsuarioWS\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
