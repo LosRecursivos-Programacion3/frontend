@@ -9,16 +9,16 @@
         <p class="text-muted">Accede con tu cuenta</p>
 
         <div class="mb-3">
-            <input type="email" class="form-control" placeholder="usuario@pucp.edu.pe" required>
+            <asp:TextBox ID="TxtEmail" runat="server" type="email" class="form-control" placeholder="usuario@pucp.edu.pe" required></asp:TextBox>
         </div>
         <div class="mb-3">
-            <input type="password" class="form-control" placeholder="Contraseña" required>
+            <asp:TextBox ID="TxtPassword" runat="server" type="password" class="form-control" placeholder="Contraseña" required></asp:TextBox>
         </div>
         <div class="d-grid">
-            <button type="submit" class="btn btn-primary">Ingresar</button>
+            <asp:Button ID="BtnLogin" class="btn btn-primary" OnClick="BtnLogin_Click" runat="server" Text="Ingresar" />
         </div>
         <div class="forgot-link mt-3">
-            ¿Olvidaste tu contraseña? <a href="#">Recupérala aquí</a>
+            ¿Aún no tienes cuenta? <a href="Register.aspx">Regístrate aquí</a>
         </div>
     </form>
 </asp:Content>

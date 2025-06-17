@@ -1,4 +1,3 @@
-C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectPresentacion\bin\PucpConnectPresentacion.dll.config
 C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectPresentacion\bin\PucpConnectPresentacion.dll
 C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectPresentacion\bin\PucpConnectPresentacion.pdb
 C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectPresentacion\bin\roslyn\csc.exe
@@ -57,3 +56,6 @@ C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectPresentacion\o
 C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectPresentacion\obj\Debug\PucpConn.78892CE3.Up2Date
 C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectPresentacion\obj\Debug\PucpConnectPresentacion.dll
 C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectPresentacion\obj\Debug\PucpConnectPresentacion.pdb
+C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectPresentacion\bin\PucpConnectPresentacion.dll.config
+C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectPresentacion\bin\PucpConnectDomain.dll
+C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectPresentacion\bin\PucpConnectDomain.pdb

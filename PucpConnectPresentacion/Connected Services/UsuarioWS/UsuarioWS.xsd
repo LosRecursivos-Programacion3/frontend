@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ws.pucpconnect.pe.edu.pucp/" targetNamespace="http://ws.pucpconnect.pe.edu.pucp/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="registrarAlumno" type="tns:registrarAlumno" />
+  <xs:element name="registrarAlumnoResponse" type="tns:registrarAlumnoResponse" />
+  <xs:complexType name="registrarAlumno">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element name="estado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element name="edad" type="xs:int" />
+      <xs:element minOccurs="0" name="carrera" type="xs:string" />
+      <xs:element minOccurs="0" name="fotoPerfil" type="xs:string" />
+      <xs:element minOccurs="0" name="ubicacion" type="xs:string" />
+      <xs:element minOccurs="0" name="biografia" type="xs:string" />
+      <xs:element name="visible" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="registrarAlumnoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
