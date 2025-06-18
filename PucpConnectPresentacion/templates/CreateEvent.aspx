@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masters/Create.Master" AutoEventWireup="true" CodeBehind="CreateEvent.aspx.cs" Inherits="PucpConnectPresentacion.templates.CreateEvent" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Masters/Create.Master" AutoEventWireup="true" CodeBehind="CreateEvent.aspx.cs" Inherits="PucpConnectPresentacion.templates.CreateEvent" %>
 <asp:Content ID="TitleContent" ContentPlaceHolderID="TitleContent" runat="server">
     Crear Nuevo Evento
 </asp:Content>
@@ -71,7 +71,7 @@
                 </small>
             </div>
             <div class="text-end">
-                <asp:Button ID="btnCrear" runat="server" CssClass="btn btn-primary rounded-pill px-4 fw-bold" Text="Crear" />
+                <asp:Button ID="btnCrear" runat="server" CssClass="btn btn-primary rounded-pill px-4 fw-bold" Text="Crear" OnClick="btnCrear_Click"  />
             </div>
         </div>
     </div>
