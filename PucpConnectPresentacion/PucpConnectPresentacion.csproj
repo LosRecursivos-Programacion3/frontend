@@ -69,12 +69,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\UsuarioWS\configuration91.svcinfo" />
-    <None Include="Connected Services\UsuarioWS\configuration.svcinfo" />
-    <Content Include="Connected Services\UsuarioWS\PucpConnectPresentacion.UsuarioWS.registrarAlumnoResponse.datasource">
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <None Include="Connected Services\UsuarioWS\Reference.svcmap">
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.registrarAlumnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.usuario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\PUCPConnectWS\UsuarioWS.wsdl" />
+    <None Include="Connected Services\PUCPConnectWS\UsuarioWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\PUCPConnectWS\configuration91.svcinfo" />
+    <None Include="Connected Services\PUCPConnectWS\configuration.svcinfo" />
+    <None Include="Connected Services\PUCPConnectWS\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -99,7 +109,7 @@
     <Content Include="templates\Login.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\UsuarioWS\Reference.cs">
+    <Compile Include="Connected Services\PUCPConnectWS\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -236,10 +246,6 @@
     <Content Include="Masters\MainLayout.Master" />
     <Content Include="Masters\LoginLayout.Master" />
     <Content Include="Masters\Create.Master" />
-    <None Include="Connected Services\UsuarioWS\UsuarioWS.wsdl" />
-    <None Include="Connected Services\UsuarioWS\UsuarioWS.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="packages.config" />
     <Content Include="Masters\Profile.Master" />
     <Content Include="Masters\SectionLayout.Master" />
@@ -263,7 +269,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\UsuarioWS\" />
+    <WCFMetadataStorage Include="Connected Services\PUCPConnectWS\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

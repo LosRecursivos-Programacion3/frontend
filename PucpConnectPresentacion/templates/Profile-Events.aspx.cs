@@ -11,10 +11,7 @@ namespace PucpConnectPresentacion.templates
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["usuario"] == null) // o el nombre que uses
-            {
-                Response.Redirect("~/templates/Login.aspx");
-            }
+           
         }
     }
 }
