@@ -5,31 +5,31 @@
       <xsd:import schemaLocation="http://localhost:8080/PucpConnectWS/UsuarioWS?xsd=1" namespace="http://ws.pucpconnect.pe.edu.pucp/" />
     </xsd:schema>
   </types>
-  <message name="autenticarUsuario">
-    <part name="parameters" element="tns:autenticarUsuario" />
-  </message>
-  <message name="autenticarUsuarioResponse">
-    <part name="parameters" element="tns:autenticarUsuarioResponse" />
-  </message>
   <message name="registrarAlumno">
     <part name="parameters" element="tns:registrarAlumno" />
   </message>
   <message name="registrarAlumnoResponse">
     <part name="parameters" element="tns:registrarAlumnoResponse" />
   </message>
+  <message name="autenticarUsuario">
+    <part name="parameters" element="tns:autenticarUsuario" />
+  </message>
+  <message name="autenticarUsuarioResponse">
+    <part name="parameters" element="tns:autenticarUsuarioResponse" />
+  </message>
   <portType name="UsuarioWS">
-    <operation name="autenticarUsuario">
-      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/autenticarUsuarioRequest" message="tns:autenticarUsuario" />
-      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/autenticarUsuarioResponse" message="tns:autenticarUsuarioResponse" />
-    </operation>
     <operation name="registrarAlumno">
       <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarAlumnoRequest" message="tns:registrarAlumno" />
       <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarAlumnoResponse" message="tns:registrarAlumnoResponse" />
     </operation>
+    <operation name="autenticarUsuario">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/autenticarUsuarioRequest" message="tns:autenticarUsuario" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/autenticarUsuarioResponse" message="tns:autenticarUsuarioResponse" />
+    </operation>
   </portType>
   <binding name="UsuarioWSPortBinding" type="tns:UsuarioWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="autenticarUsuario">
+    <operation name="registrarAlumno">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -38,7 +38,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="registrarAlumno">
+    <operation name="autenticarUsuario">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

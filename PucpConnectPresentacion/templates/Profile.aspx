@@ -17,7 +17,7 @@
                 </div>
                 <div class="col-text">
                     <div>
-                        <h4 class="mb-2">Heider Sanchez <small class="text-muted"> | Ing. Informática</small></h4>
+                        <h4><asp:Label ID="lblNombrePerfil" runat="server" CssClass="fw-bold"></asp:Label><small> | Ing. Informática</small></h4>
                         <p class="mb-0">
                             Ingeniero Informático, hago prácticas en la empresa Bankinter, me apasiona desarrollar sistemas web.
                             Aspiro aplicar mis conocimientos en el extranjero, experto en: Java, C#, C, C++, Python, JavaScript, SQL.

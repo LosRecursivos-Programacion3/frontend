@@ -21,7 +21,7 @@
             <img class="img-logo" src="../Images/PUCPCONNETHORIZONTAL-1.png" alt="PUCP Connect Logo"/>
             <div class="dropdown">
                 <a class="d-flex align-items-center text-white text-decoration-none" href="Profile.aspx" id="dropdownUserMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <strong>Heider Sanchez</strong>
+                    <strong><asp:Label ID="lblNombreUsuario" runat="server" CssClass="text-white" /></strong>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end text-small shadow" aria-labelledby="dropdownUserMenu">
                     <li>
@@ -33,7 +33,7 @@
                         <hr class="dropdown-divider">
                     </li>
                     <li>
-                        <a class="dropdown-item text-danger" href="#">
+                        <a class="dropdown-item text-danger" href="Logout.aspx">
                             <i class="fa-solid fa-right-from-bracket me-2"></i> Cerrar Sesión
                         </a>
                     </li>

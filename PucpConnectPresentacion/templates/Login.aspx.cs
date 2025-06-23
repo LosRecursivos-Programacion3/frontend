@@ -25,6 +25,7 @@ namespace PucpConnectPresentacion
             usuario us = usuarioWSClient.autenticarUsuario(email, password);
             if (us!=null)
             {
+                Session["usuarioActual"] = us;
                 FormsAuthenticationTicket tkt;
                 string cookiestr;
                 HttpCookie ck;
@@ -35,6 +36,7 @@ namespace PucpConnectPresentacion
                 ck.Expires = tkt.Expiration; //esto genera que la cookie se quede guardada
                 ck.Path = FormsAuthentication.FormsCookiePath;
                 Response.Cookies.Add(ck);
+
 
                 string strRedirect;
                 strRedirect = Request["ReturnUrl"];
