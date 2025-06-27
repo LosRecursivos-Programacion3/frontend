@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://ws.pucpconnect.pe.edu.pucp/" targetNamespace="http://ws.pucpconnect.pe.edu.pucp/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="actualizarAlumno" type="tns:actualizarAlumno" />
+  <xs:element name="actualizarAlumnoResponse" type="tns:actualizarAlumnoResponse" />
   <xs:element name="autenticarUsuario" type="tns:autenticarUsuario" />
   <xs:element name="autenticarUsuarioResponse" type="tns:autenticarUsuarioResponse" />
+  <xs:element name="listarIntereses" type="tns:listarIntereses" />
+  <xs:element name="listarInteresesResponse" type="tns:listarInteresesResponse" />
+  <xs:element name="obtenerInteresesUsuario" type="tns:obtenerInteresesUsuario" />
+  <xs:element name="obtenerInteresesUsuarioResponse" type="tns:obtenerInteresesUsuarioResponse" />
   <xs:element name="registrarAlumno" type="tns:registrarAlumno" />
   <xs:element name="registrarAlumnoResponse" type="tns:registrarAlumnoResponse" />
+  <xs:element name="registrarInteresesUsuario" type="tns:registrarInteresesUsuario" />
+  <xs:element name="registrarInteresesUsuarioResponse" type="tns:registrarInteresesUsuarioResponse" />
+  <xs:complexType name="listarIntereses">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarInteresesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:interes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="interes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="registrarInteresesUsuario">
+    <xs:sequence>
+      <xs:element name="idAlumno" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ids" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="registrarInteresesUsuarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="autenticarUsuario">
     <xs:sequence>
       <xs:element minOccurs="0" name="email" type="xs:string" />
@@ -12,8 +46,23 @@
   </xs:complexType>
   <xs:complexType name="autenticarUsuarioResponse">
     <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="tns:usuario" />
+      <xs:element minOccurs="0" name="return" type="tns:alumno" />
     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="alumno">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:usuario">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="biografia" type="xs:string" />
+          <xs:element minOccurs="0" name="carrera" type="xs:string" />
+          <xs:element name="edad" type="xs:int" />
+          <xs:element minOccurs="0" name="fotoPerfil" type="xs:string" />
+          <xs:element name="idAlumno" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="idsAlumnosBloqueados" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="ubicacion" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
   </xs:complexType>
   <xs:complexType name="usuario">
     <xs:sequence>
@@ -28,6 +77,16 @@
   </xs:complexType>
   <xs:complexType name="localDateTime" final="extension restriction">
     <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="obtenerInteresesUsuario">
+    <xs:sequence>
+      <xs:element name="idAlumno" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerInteresesUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:interes" />
+    </xs:sequence>
   </xs:complexType>
   <xs:complexType name="registrarAlumno">
     <xs:sequence>
@@ -44,6 +103,23 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="registrarAlumnoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actualizarAlumno">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+      <xs:element name="idAlumno" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="edad" type="xs:int" />
+      <xs:element minOccurs="0" name="carrera" type="xs:string" />
+      <xs:element minOccurs="0" name="fotoPerfil" type="xs:string" />
+      <xs:element minOccurs="0" name="ubicacion" type="xs:string" />
+      <xs:element minOccurs="0" name="biografia" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actualizarAlumnoResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:boolean" />
     </xs:sequence>

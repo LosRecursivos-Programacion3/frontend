@@ -12,7 +12,8 @@ namespace PucpConnectPresentacion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var usuarioActual = (usuario)Session["usuarioActual"];
+
+            var usuarioActual = (alumno)Session["usuarioActual"];
             if (usuarioActual == null)
             {
                 lblNombrePerfil.Text = "NO EN SESIÓN"; // DEBUG: Para saber si no hay sesión
@@ -20,15 +21,27 @@ namespace PucpConnectPresentacion
             }
 
             lblNombrePerfil.Text = usuarioActual.nombre;
+            lblCarrera.Text = usuarioActual.carrera;       
+            lblBiografia.Text = usuarioActual.biografia;
+            // Asignar imagen de perfil dinámica
+            string nombreArchivo = usuarioActual.fotoPerfil; // Ejemplo: "foto123.jpg"
+            if (!string.IsNullOrEmpty(nombreArchivo))
+            {
+                imgPerfil.ImageUrl = "../Images/" + nombreArchivo;
+            }
+            else
+            {
+                imgPerfil.ImageUrl = "../Images/profile-0.jpg"; // Imagen por defecto
+            }
         }
 
         protected void btnConfigurar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ProfileModify.aspx");
+            Response.Redirect("EditProfile.aspx");
         }
 
         protected void btnConfigureInterests_Click(object sender, EventArgs e) {
-            Response.Redirect("InteresModify.aspx");
+            Response.Redirect("SelectInterest.aspx");
         }
     }
 }

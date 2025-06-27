@@ -15,6 +15,15 @@ namespace PucpConnectPresentacion
     {
 
         /// <summary>
+        /// Control imgPerfil.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgPerfil;
+
+        /// <summary>
         /// Control lblNombrePerfil.
         /// </summary>
         /// <remarks>
@@ -24,21 +33,30 @@ namespace PucpConnectPresentacion
         protected global::System.Web.UI.WebControls.Label lblNombrePerfil;
 
         /// <summary>
-        /// Control btnConfigurar.
+        /// Control lblCarrera.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnConfigurar;
+        protected global::System.Web.UI.WebControls.Label lblCarrera;
 
         /// <summary>
-        /// Control btnConfigureInterests.
+        /// Control lblBiografia.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnConfigureInterests;
+        protected global::System.Web.UI.WebControls.Label lblBiografia;
+
+        /// <summary>
+        /// Control lnkEditarPerfil.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkEditarPerfil;
     }
 }

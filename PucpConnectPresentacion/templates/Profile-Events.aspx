@@ -5,29 +5,30 @@
     <!-- Contenido principal -->
     <div class="col-md-12 p-0">
         <!-- Cabecera -->
-        <div class="banner">
+       <div class="banner">
             <img src="../Images/profile-banner-0.jpeg" alt="Foto perfil" />
         </div>
         <div class="p-4 information-box" background-size: cover;>
             <div class="d-flex align-items-center">
                 <div class="col-img">
                     <div class="avatar">
-                        <img src="../Images/profile-0.jpg" class="rounded-circle me-3" alt="Foto perfil" />
+                        <asp:Image ID="imgPerfil" runat="server" CssClass="rounded-circle me-3" AlternateText="Foto perfil" />
                     </div>
                 </div>
                 <div class="col-text">
                     <div>
-                        <h4 class="mb-2">Heider Sanchez <small class="text-muted"> | Ing. Informática</small></h4>
+                        <h4><asp:Label ID="lblNombrePerfil" runat="server" CssClass="fw-bold"></asp:Label><small> | <asp:Label ID="lblCarrera" runat="server" CssClass="text-muted" /></small></h4>
                         <p class="mb-0">
-                            Ingeniero Informático, hago prácticas en la empresa Bankinter, me apasiona desarrollar sistemas web.
-                            Aspiro aplicar mis conocimientos en el extranjero, experto en: Java, C#, C, C++, Python, JavaScript, SQL.
+                            <asp:Label ID="lblBiografia" runat="server" CssClass="text-break" />
                         </p>
                     </div>
                 </div>
                 <div class="col-btn">
-                     <div class="ms-auto">
-                         <button class="btn btn-primary">Configurar Perfil</button>
-                     </div>
+                         <div class="ms-auto">
+                            <asp:LinkButton ID="lnkEditarPerfil" runat="server" PostBackUrl="EditProfile.aspx" CssClass="btn btn-outline-secondary" ToolTip="Editar Perfil">
+                                <i class="fa-solid fa-gear"></i> Configurar
+                            </asp:LinkButton> 
+                         </div>    
                 </div>
             </div>
         </div>

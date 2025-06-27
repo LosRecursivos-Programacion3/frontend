@@ -75,7 +75,22 @@
     <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.registrarAlumnoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.usuario.datasource">
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.alumno.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.interes.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.listarInteresesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.obtenerInteresesUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.registrarInteresesUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.actualizarAlumnoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Connected Services\PUCPConnectWS\UsuarioWS.wsdl" />
@@ -92,8 +107,10 @@
     <Content Include="css\Stories.css" />
     <Content Include="templates\CreateEvent.aspx" />
     <Content Include="templates\CreatePost.aspx" />
+    <Content Include="templates\EditProfile.aspx" />
     <Content Include="templates\Profile-Events.aspx" />
     <Content Include="templates\Profile-Friends.aspx" />
+    <Content Include="templates\SelectInterest.aspx" />
     <Content Include="templates\Stories.aspx" />
     <Content Include="templates\BuscarAmigos.aspx" />
     <Content Include="css\Login.css" />
@@ -135,6 +152,13 @@
     <Compile Include="templates\CreatePost.aspx.designer.cs">
       <DependentUpon>CreatePost.aspx</DependentUpon>
     </Compile>
+    <Compile Include="templates\EditProfile.aspx.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\EditProfile.aspx.designer.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="templates\Profile-Events.aspx.cs">
       <DependentUpon>Profile-Events.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -148,6 +172,13 @@
     </Compile>
     <Compile Include="templates\Profile-Friends.aspx.designer.cs">
       <DependentUpon>Profile-Friends.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\SelectInterest.aspx.cs">
+      <DependentUpon>SelectInterest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\SelectInterest.aspx.designer.cs">
+      <DependentUpon>SelectInterest.aspx</DependentUpon>
     </Compile>
     <Compile Include="templates\Stories.aspx.cs">
       <DependentUpon>Stories.aspx</DependentUpon>

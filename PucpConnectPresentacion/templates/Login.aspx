@@ -8,6 +8,7 @@
         <h3 class="mb-4 fw-bold">Iniciar sesión</h3>
         <p class="text-muted">Accede con tu cuenta</p>
 
+
         <div class="mb-3">
             <asp:TextBox ID="TxtEmail" runat="server" type="email" class="form-control" placeholder="usuario@pucp.edu.pe" required></asp:TextBox>
         </div>
@@ -17,6 +18,7 @@
         <div class="d-grid">
             <asp:Button ID="BtnLogin" class="btn btn-primary" OnClick="BtnLogin_Click" runat="server" Text="Ingresar" />
         </div>
+        <asp:Label ID="LblError" runat="server" ForeColor="Red" CssClass="mt-2 d-block"></asp:Label>
         <div class="forgot-link mt-3">
             ¿Aún no tienes cuenta? <a href="Register.aspx">Regístrate aquí</a>
         </div>

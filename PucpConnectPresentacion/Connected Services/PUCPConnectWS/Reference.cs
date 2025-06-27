@@ -16,106 +16,146 @@ namespace PucpConnectPresentacion.PUCPConnectWS {
     public interface UsuarioWS {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarAlumnoRequest", ReplyAction="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarAlumnoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/obtenerInteresesUsuarioRequest", ReplyAction="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/obtenerInteresesUsuarioResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PucpConnectPresentacion.PUCPConnectWS.registrarAlumnoResponse registrarAlumno(PucpConnectPresentacion.PUCPConnectWS.registrarAlumnoRequest request);
+        PucpConnectPresentacion.PUCPConnectWS.obtenerInteresesUsuarioResponse obtenerInteresesUsuario(PucpConnectPresentacion.PUCPConnectWS.obtenerInteresesUsuarioRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarAlumnoRequest", ReplyAction="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarAlumnoResponse")]
-        System.Threading.Tasks.Task<PucpConnectPresentacion.PUCPConnectWS.registrarAlumnoResponse> registrarAlumnoAsync(PucpConnectPresentacion.PUCPConnectWS.registrarAlumnoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/obtenerInteresesUsuarioRequest", ReplyAction="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/obtenerInteresesUsuarioResponse")]
+        System.Threading.Tasks.Task<PucpConnectPresentacion.PUCPConnectWS.obtenerInteresesUsuarioResponse> obtenerInteresesUsuarioAsync(PucpConnectPresentacion.PUCPConnectWS.obtenerInteresesUsuarioRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarInteresesUsuarioRequest", ReplyAction="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarInteresesUsuarioResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PucpConnectPresentacion.PUCPConnectWS.registrarInteresesUsuarioResponse registrarInteresesUsuario(PucpConnectPresentacion.PUCPConnectWS.registrarInteresesUsuarioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarInteresesUsuarioRequest", ReplyAction="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarInteresesUsuarioResponse")]
+        System.Threading.Tasks.Task<PucpConnectPresentacion.PUCPConnectWS.registrarInteresesUsuarioResponse> registrarInteresesUsuarioAsync(PucpConnectPresentacion.PUCPConnectWS.registrarInteresesUsuarioRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/actualizarAlumnoRequest", ReplyAction="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/actualizarAlumnoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PucpConnectPresentacion.PUCPConnectWS.actualizarAlumnoResponse actualizarAlumno(PucpConnectPresentacion.PUCPConnectWS.actualizarAlumnoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/actualizarAlumnoRequest", ReplyAction="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/actualizarAlumnoResponse")]
+        System.Threading.Tasks.Task<PucpConnectPresentacion.PUCPConnectWS.actualizarAlumnoResponse> actualizarAlumnoAsync(PucpConnectPresentacion.PUCPConnectWS.actualizarAlumnoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/autenticarUsuarioRequest", ReplyAction="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/autenticarUsuarioResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
         PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioResponse autenticarUsuario(PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/autenticarUsuarioRequest", ReplyAction="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/autenticarUsuarioResponse")]
         System.Threading.Tasks.Task<PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioResponse> autenticarUsuarioAsync(PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarInteresesRequest", ReplyAction="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarInteresesResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PucpConnectPresentacion.PUCPConnectWS.listarInteresesResponse listarIntereses(PucpConnectPresentacion.PUCPConnectWS.listarInteresesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarInteresesRequest", ReplyAction="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarInteresesResponse")]
+        System.Threading.Tasks.Task<PucpConnectPresentacion.PUCPConnectWS.listarInteresesResponse> listarInteresesAsync(PucpConnectPresentacion.PUCPConnectWS.listarInteresesRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarAlumnoRequest", ReplyAction="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarAlumnoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PucpConnectPresentacion.PUCPConnectWS.registrarAlumnoResponse registrarAlumno(PucpConnectPresentacion.PUCPConnectWS.registrarAlumnoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarAlumnoRequest", ReplyAction="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarAlumnoResponse")]
+        System.Threading.Tasks.Task<PucpConnectPresentacion.PUCPConnectWS.registrarAlumnoResponse> registrarAlumnoAsync(PucpConnectPresentacion.PUCPConnectWS.registrarAlumnoRequest request);
     }
     
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarAlumno", WrapperNamespace="http://ws.pucpconnect.pe.edu.pucp/", IsWrapped=true)]
-    public partial class registrarAlumnoRequest {
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/")]
+    public partial class interes : object, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string nombre;
+        private string descripcionField;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string password;
+        private int idField;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool estado;
+        private string nombreField;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string email;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=4)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int edad;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=5)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string carrera;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=6)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string fotoPerfil;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=7)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string ubicacion;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=8)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string biografia;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=9)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool visible;
-        
-        public registrarAlumnoRequest() {
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string descripcion {
+            get {
+                return this.descripcionField;
+            }
+            set {
+                this.descripcionField = value;
+                this.RaisePropertyChanged("descripcion");
+            }
         }
         
-        public registrarAlumnoRequest(string nombre, string password, bool estado, string email, int edad, string carrera, string fotoPerfil, string ubicacion, string biografia, bool visible) {
-            this.nombre = nombre;
-            this.password = password;
-            this.estado = estado;
-            this.email = email;
-            this.edad = edad;
-            this.carrera = carrera;
-            this.fotoPerfil = fotoPerfil;
-            this.ubicacion = ubicacion;
-            this.biografia = biografia;
-            this.visible = visible;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarAlumnoResponse", WrapperNamespace="http://ws.pucpconnect.pe.edu.pucp/", IsWrapped=true)]
-    public partial class registrarAlumnoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public registrarAlumnoResponse() {
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int id {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+                this.RaisePropertyChanged("id");
+            }
         }
         
-        public registrarAlumnoResponse(bool @return) {
-            this.@return = @return;
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                this.nombreField = value;
+                this.RaisePropertyChanged("nombre");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
         }
     }
     
     /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/")]
+    public partial class localDateTime : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(alumno))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -237,15 +277,252 @@ namespace PucpConnectPresentacion.PUCPConnectWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/")]
-    public partial class localDateTime : object, System.ComponentModel.INotifyPropertyChanged {
+    public partial class alumno : usuario {
         
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        private string biografiaField;
         
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+        private string carreraField;
+        
+        private int edadField;
+        
+        private string fotoPerfilField;
+        
+        private int idAlumnoField;
+        
+        private System.Nullable<int>[] idsAlumnosBloqueadosField;
+        
+        private string ubicacionField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string biografia {
+            get {
+                return this.biografiaField;
             }
+            set {
+                this.biografiaField = value;
+                this.RaisePropertyChanged("biografia");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string carrera {
+            get {
+                return this.carreraField;
+            }
+            set {
+                this.carreraField = value;
+                this.RaisePropertyChanged("carrera");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public int edad {
+            get {
+                return this.edadField;
+            }
+            set {
+                this.edadField = value;
+                this.RaisePropertyChanged("edad");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string fotoPerfil {
+            get {
+                return this.fotoPerfilField;
+            }
+            set {
+                this.fotoPerfilField = value;
+                this.RaisePropertyChanged("fotoPerfil");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public int idAlumno {
+            get {
+                return this.idAlumnoField;
+            }
+            set {
+                this.idAlumnoField = value;
+                this.RaisePropertyChanged("idAlumno");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("idsAlumnosBloqueados", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=5)]
+        public System.Nullable<int>[] idsAlumnosBloqueados {
+            get {
+                return this.idsAlumnosBloqueadosField;
+            }
+            set {
+                this.idsAlumnosBloqueadosField = value;
+                this.RaisePropertyChanged("idsAlumnosBloqueados");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string ubicacion {
+            get {
+                return this.ubicacionField;
+            }
+            set {
+                this.ubicacionField = value;
+                this.RaisePropertyChanged("ubicacion");
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerInteresesUsuario", WrapperNamespace="http://ws.pucpconnect.pe.edu.pucp/", IsWrapped=true)]
+    public partial class obtenerInteresesUsuarioRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idAlumno;
+        
+        public obtenerInteresesUsuarioRequest() {
+        }
+        
+        public obtenerInteresesUsuarioRequest(int idAlumno) {
+            this.idAlumno = idAlumno;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerInteresesUsuarioResponse", WrapperNamespace="http://ws.pucpconnect.pe.edu.pucp/", IsWrapped=true)]
+    public partial class obtenerInteresesUsuarioResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PucpConnectPresentacion.PUCPConnectWS.interes[] @return;
+        
+        public obtenerInteresesUsuarioResponse() {
+        }
+        
+        public obtenerInteresesUsuarioResponse(PucpConnectPresentacion.PUCPConnectWS.interes[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarInteresesUsuario", WrapperNamespace="http://ws.pucpconnect.pe.edu.pucp/", IsWrapped=true)]
+    public partial class registrarInteresesUsuarioRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idAlumno;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ids", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int[] ids;
+        
+        public registrarInteresesUsuarioRequest() {
+        }
+        
+        public registrarInteresesUsuarioRequest(int idAlumno, int[] ids) {
+            this.idAlumno = idAlumno;
+            this.ids = ids;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarInteresesUsuarioResponse", WrapperNamespace="http://ws.pucpconnect.pe.edu.pucp/", IsWrapped=true)]
+    public partial class registrarInteresesUsuarioResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public registrarInteresesUsuarioResponse() {
+        }
+        
+        public registrarInteresesUsuarioResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarAlumno", WrapperNamespace="http://ws.pucpconnect.pe.edu.pucp/", IsWrapped=true)]
+    public partial class actualizarAlumnoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idAlumno;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nombre;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int edad;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string carrera;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string fotoPerfil;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string ubicacion;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string biografia;
+        
+        public actualizarAlumnoRequest() {
+        }
+        
+        public actualizarAlumnoRequest(int id, int idAlumno, string nombre, int edad, string carrera, string fotoPerfil, string ubicacion, string biografia) {
+            this.id = id;
+            this.idAlumno = idAlumno;
+            this.nombre = nombre;
+            this.edad = edad;
+            this.carrera = carrera;
+            this.fotoPerfil = fotoPerfil;
+            this.ubicacion = ubicacion;
+            this.biografia = biografia;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="actualizarAlumnoResponse", WrapperNamespace="http://ws.pucpconnect.pe.edu.pucp/", IsWrapped=true)]
+    public partial class actualizarAlumnoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public actualizarAlumnoResponse() {
+        }
+        
+        public actualizarAlumnoResponse(bool @return) {
+            this.@return = @return;
         }
     }
     
@@ -280,12 +557,121 @@ namespace PucpConnectPresentacion.PUCPConnectWS {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PucpConnectPresentacion.PUCPConnectWS.usuario @return;
+        public PucpConnectPresentacion.PUCPConnectWS.alumno @return;
         
         public autenticarUsuarioResponse() {
         }
         
-        public autenticarUsuarioResponse(PucpConnectPresentacion.PUCPConnectWS.usuario @return) {
+        public autenticarUsuarioResponse(PucpConnectPresentacion.PUCPConnectWS.alumno @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarIntereses", WrapperNamespace="http://ws.pucpconnect.pe.edu.pucp/", IsWrapped=true)]
+    public partial class listarInteresesRequest {
+        
+        public listarInteresesRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarInteresesResponse", WrapperNamespace="http://ws.pucpconnect.pe.edu.pucp/", IsWrapped=true)]
+    public partial class listarInteresesResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PucpConnectPresentacion.PUCPConnectWS.interes[] @return;
+        
+        public listarInteresesResponse() {
+        }
+        
+        public listarInteresesResponse(PucpConnectPresentacion.PUCPConnectWS.interes[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarAlumno", WrapperNamespace="http://ws.pucpconnect.pe.edu.pucp/", IsWrapped=true)]
+    public partial class registrarAlumnoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nombre;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string password;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool estado;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string email;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int edad;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string carrera;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string fotoPerfil;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string ubicacion;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=8)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string biografia;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=9)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool visible;
+        
+        public registrarAlumnoRequest() {
+        }
+        
+        public registrarAlumnoRequest(string nombre, string password, bool estado, string email, int edad, string carrera, string fotoPerfil, string ubicacion, string biografia, bool visible) {
+            this.nombre = nombre;
+            this.password = password;
+            this.estado = estado;
+            this.email = email;
+            this.edad = edad;
+            this.carrera = carrera;
+            this.fotoPerfil = fotoPerfil;
+            this.ubicacion = ubicacion;
+            this.biografia = biografia;
+            this.visible = visible;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="registrarAlumnoResponse", WrapperNamespace="http://ws.pucpconnect.pe.edu.pucp/", IsWrapped=true)]
+    public partial class registrarAlumnoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pucpconnect.pe.edu.pucp/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public registrarAlumnoResponse() {
+        }
+        
+        public registrarAlumnoResponse(bool @return) {
             this.@return = @return;
         }
     }
@@ -315,6 +701,137 @@ namespace PucpConnectPresentacion.PUCPConnectWS {
         
         public UsuarioWSClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PucpConnectPresentacion.PUCPConnectWS.obtenerInteresesUsuarioResponse PucpConnectPresentacion.PUCPConnectWS.UsuarioWS.obtenerInteresesUsuario(PucpConnectPresentacion.PUCPConnectWS.obtenerInteresesUsuarioRequest request) {
+            return base.Channel.obtenerInteresesUsuario(request);
+        }
+        
+        public PucpConnectPresentacion.PUCPConnectWS.interes[] obtenerInteresesUsuario(int idAlumno) {
+            PucpConnectPresentacion.PUCPConnectWS.obtenerInteresesUsuarioRequest inValue = new PucpConnectPresentacion.PUCPConnectWS.obtenerInteresesUsuarioRequest();
+            inValue.idAlumno = idAlumno;
+            PucpConnectPresentacion.PUCPConnectWS.obtenerInteresesUsuarioResponse retVal = ((PucpConnectPresentacion.PUCPConnectWS.UsuarioWS)(this)).obtenerInteresesUsuario(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PucpConnectPresentacion.PUCPConnectWS.obtenerInteresesUsuarioResponse> PucpConnectPresentacion.PUCPConnectWS.UsuarioWS.obtenerInteresesUsuarioAsync(PucpConnectPresentacion.PUCPConnectWS.obtenerInteresesUsuarioRequest request) {
+            return base.Channel.obtenerInteresesUsuarioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PucpConnectPresentacion.PUCPConnectWS.obtenerInteresesUsuarioResponse> obtenerInteresesUsuarioAsync(int idAlumno) {
+            PucpConnectPresentacion.PUCPConnectWS.obtenerInteresesUsuarioRequest inValue = new PucpConnectPresentacion.PUCPConnectWS.obtenerInteresesUsuarioRequest();
+            inValue.idAlumno = idAlumno;
+            return ((PucpConnectPresentacion.PUCPConnectWS.UsuarioWS)(this)).obtenerInteresesUsuarioAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PucpConnectPresentacion.PUCPConnectWS.registrarInteresesUsuarioResponse PucpConnectPresentacion.PUCPConnectWS.UsuarioWS.registrarInteresesUsuario(PucpConnectPresentacion.PUCPConnectWS.registrarInteresesUsuarioRequest request) {
+            return base.Channel.registrarInteresesUsuario(request);
+        }
+        
+        public bool registrarInteresesUsuario(int idAlumno, int[] ids) {
+            PucpConnectPresentacion.PUCPConnectWS.registrarInteresesUsuarioRequest inValue = new PucpConnectPresentacion.PUCPConnectWS.registrarInteresesUsuarioRequest();
+            inValue.idAlumno = idAlumno;
+            inValue.ids = ids;
+            PucpConnectPresentacion.PUCPConnectWS.registrarInteresesUsuarioResponse retVal = ((PucpConnectPresentacion.PUCPConnectWS.UsuarioWS)(this)).registrarInteresesUsuario(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PucpConnectPresentacion.PUCPConnectWS.registrarInteresesUsuarioResponse> PucpConnectPresentacion.PUCPConnectWS.UsuarioWS.registrarInteresesUsuarioAsync(PucpConnectPresentacion.PUCPConnectWS.registrarInteresesUsuarioRequest request) {
+            return base.Channel.registrarInteresesUsuarioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PucpConnectPresentacion.PUCPConnectWS.registrarInteresesUsuarioResponse> registrarInteresesUsuarioAsync(int idAlumno, int[] ids) {
+            PucpConnectPresentacion.PUCPConnectWS.registrarInteresesUsuarioRequest inValue = new PucpConnectPresentacion.PUCPConnectWS.registrarInteresesUsuarioRequest();
+            inValue.idAlumno = idAlumno;
+            inValue.ids = ids;
+            return ((PucpConnectPresentacion.PUCPConnectWS.UsuarioWS)(this)).registrarInteresesUsuarioAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PucpConnectPresentacion.PUCPConnectWS.actualizarAlumnoResponse PucpConnectPresentacion.PUCPConnectWS.UsuarioWS.actualizarAlumno(PucpConnectPresentacion.PUCPConnectWS.actualizarAlumnoRequest request) {
+            return base.Channel.actualizarAlumno(request);
+        }
+        
+        public bool actualizarAlumno(int id, int idAlumno, string nombre, int edad, string carrera, string fotoPerfil, string ubicacion, string biografia) {
+            PucpConnectPresentacion.PUCPConnectWS.actualizarAlumnoRequest inValue = new PucpConnectPresentacion.PUCPConnectWS.actualizarAlumnoRequest();
+            inValue.id = id;
+            inValue.idAlumno = idAlumno;
+            inValue.nombre = nombre;
+            inValue.edad = edad;
+            inValue.carrera = carrera;
+            inValue.fotoPerfil = fotoPerfil;
+            inValue.ubicacion = ubicacion;
+            inValue.biografia = biografia;
+            PucpConnectPresentacion.PUCPConnectWS.actualizarAlumnoResponse retVal = ((PucpConnectPresentacion.PUCPConnectWS.UsuarioWS)(this)).actualizarAlumno(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PucpConnectPresentacion.PUCPConnectWS.actualizarAlumnoResponse> PucpConnectPresentacion.PUCPConnectWS.UsuarioWS.actualizarAlumnoAsync(PucpConnectPresentacion.PUCPConnectWS.actualizarAlumnoRequest request) {
+            return base.Channel.actualizarAlumnoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PucpConnectPresentacion.PUCPConnectWS.actualizarAlumnoResponse> actualizarAlumnoAsync(int id, int idAlumno, string nombre, int edad, string carrera, string fotoPerfil, string ubicacion, string biografia) {
+            PucpConnectPresentacion.PUCPConnectWS.actualizarAlumnoRequest inValue = new PucpConnectPresentacion.PUCPConnectWS.actualizarAlumnoRequest();
+            inValue.id = id;
+            inValue.idAlumno = idAlumno;
+            inValue.nombre = nombre;
+            inValue.edad = edad;
+            inValue.carrera = carrera;
+            inValue.fotoPerfil = fotoPerfil;
+            inValue.ubicacion = ubicacion;
+            inValue.biografia = biografia;
+            return ((PucpConnectPresentacion.PUCPConnectWS.UsuarioWS)(this)).actualizarAlumnoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioResponse PucpConnectPresentacion.PUCPConnectWS.UsuarioWS.autenticarUsuario(PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioRequest request) {
+            return base.Channel.autenticarUsuario(request);
+        }
+        
+        public PucpConnectPresentacion.PUCPConnectWS.alumno autenticarUsuario(string email, string password) {
+            PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioRequest inValue = new PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioRequest();
+            inValue.email = email;
+            inValue.password = password;
+            PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioResponse retVal = ((PucpConnectPresentacion.PUCPConnectWS.UsuarioWS)(this)).autenticarUsuario(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioResponse> PucpConnectPresentacion.PUCPConnectWS.UsuarioWS.autenticarUsuarioAsync(PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioRequest request) {
+            return base.Channel.autenticarUsuarioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioResponse> autenticarUsuarioAsync(string email, string password) {
+            PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioRequest inValue = new PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioRequest();
+            inValue.email = email;
+            inValue.password = password;
+            return ((PucpConnectPresentacion.PUCPConnectWS.UsuarioWS)(this)).autenticarUsuarioAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PucpConnectPresentacion.PUCPConnectWS.listarInteresesResponse PucpConnectPresentacion.PUCPConnectWS.UsuarioWS.listarIntereses(PucpConnectPresentacion.PUCPConnectWS.listarInteresesRequest request) {
+            return base.Channel.listarIntereses(request);
+        }
+        
+        public PucpConnectPresentacion.PUCPConnectWS.interes[] listarIntereses() {
+            PucpConnectPresentacion.PUCPConnectWS.listarInteresesRequest inValue = new PucpConnectPresentacion.PUCPConnectWS.listarInteresesRequest();
+            PucpConnectPresentacion.PUCPConnectWS.listarInteresesResponse retVal = ((PucpConnectPresentacion.PUCPConnectWS.UsuarioWS)(this)).listarIntereses(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PucpConnectPresentacion.PUCPConnectWS.listarInteresesResponse> PucpConnectPresentacion.PUCPConnectWS.UsuarioWS.listarInteresesAsync(PucpConnectPresentacion.PUCPConnectWS.listarInteresesRequest request) {
+            return base.Channel.listarInteresesAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PucpConnectPresentacion.PUCPConnectWS.listarInteresesResponse> listarInteresesAsync() {
+            PucpConnectPresentacion.PUCPConnectWS.listarInteresesRequest inValue = new PucpConnectPresentacion.PUCPConnectWS.listarInteresesRequest();
+            return ((PucpConnectPresentacion.PUCPConnectWS.UsuarioWS)(this)).listarInteresesAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -356,31 +873,6 @@ namespace PucpConnectPresentacion.PUCPConnectWS {
             inValue.biografia = biografia;
             inValue.visible = visible;
             return ((PucpConnectPresentacion.PUCPConnectWS.UsuarioWS)(this)).registrarAlumnoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioResponse PucpConnectPresentacion.PUCPConnectWS.UsuarioWS.autenticarUsuario(PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioRequest request) {
-            return base.Channel.autenticarUsuario(request);
-        }
-        
-        public PucpConnectPresentacion.PUCPConnectWS.usuario autenticarUsuario(string email, string password) {
-            PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioRequest inValue = new PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioRequest();
-            inValue.email = email;
-            inValue.password = password;
-            PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioResponse retVal = ((PucpConnectPresentacion.PUCPConnectWS.UsuarioWS)(this)).autenticarUsuario(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioResponse> PucpConnectPresentacion.PUCPConnectWS.UsuarioWS.autenticarUsuarioAsync(PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioRequest request) {
-            return base.Channel.autenticarUsuarioAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioResponse> autenticarUsuarioAsync(string email, string password) {
-            PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioRequest inValue = new PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioRequest();
-            inValue.email = email;
-            inValue.password = password;
-            return ((PucpConnectPresentacion.PUCPConnectWS.UsuarioWS)(this)).autenticarUsuarioAsync(inValue);
         }
     }
 }
