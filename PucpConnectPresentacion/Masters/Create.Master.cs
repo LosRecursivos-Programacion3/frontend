@@ -17,6 +17,8 @@ namespace PucpConnectPresentacion.Masters
                 Response.Redirect("Login.aspx");
                 return;
             }
+
+            lblNombreUsuario.Text = usuarioActual.nombre;
         }
     }
 }

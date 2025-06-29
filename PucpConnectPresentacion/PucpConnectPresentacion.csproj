@@ -138,6 +138,15 @@
     <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.listarAmigosPorIdResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.crearPostResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.listarPostPorIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.post.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\PUCPConnectWS\UsuarioWS.wsdl" />
     <None Include="Connected Services\PUCPConnectWS\UsuarioWS.xsd">
       <SubType>Designer</SubType>

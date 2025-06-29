@@ -10,9 +10,10 @@ namespace PucpConnectPresentacion
 {
     public partial class Profile : System.Web.UI.Page
     {
+        private UsuarioWSClient usuarioWSClient;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            usuarioWSClient = new PUCPConnectWS.UsuarioWSClient();
             var usuarioActual = (alumno)Session["usuarioActual"];
             if (usuarioActual == null)
             {
@@ -32,6 +33,37 @@ namespace PucpConnectPresentacion
             else
             {
                 imgPerfil.ImageUrl = "../Images/profile-0.jpg"; // Imagen por defecto
+            }
+
+            if (!IsPostBack)
+            {
+                CargarPublicaciones(usuarioActual.idAlumno);
+            }
+        }
+
+        private void CargarPublicaciones(int idAlumno)
+        {
+            var publicaciones = usuarioWSClient.listarPostPorId(idAlumno);
+            var usuarioActual = (alumno)Session["usuarioActual"];
+            // Convertir a un DTO visual si es necesario
+            var publicacionesVisual = publicaciones.Select(p => new
+            {
+                Contenido = p.contenido,
+                ImagenPost = string.IsNullOrEmpty(p.imagen) ? null : $"../Images/{p.imagen}",
+                NombreAutor = usuarioActual.nombre,
+                RutaImagenAutor = $"../Images/{usuarioActual.fotoPerfil ?? "default.jpg"}",
+                CarreraYFecha = $"{usuarioActual.carrera} · {p.fecha}"
+            }).ToList();
+
+            if (publicacionesVisual.Count() == 0)
+            {
+                lblSinPublicaciones.Visible = true;
+            }
+            else
+            {
+                lblSinPublicaciones.Visible = false;
+                rptPublicaciones.DataSource = publicacionesVisual;
+                rptPublicaciones.DataBind();
             }
         }
 

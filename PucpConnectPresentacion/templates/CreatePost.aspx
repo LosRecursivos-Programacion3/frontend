@@ -5,7 +5,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h5 class="mb-4 fw-semibold">Crear Nueva Publicación</h5>
-
+    <asp:Label ID="LblMensaje" runat="server" ForeColor="Green"></asp:Label>
     <!-- Área de publicación -->
     <div class="mb-4">
         <label class="form-label fw-semibold text-primary">Contenido</label>
@@ -42,6 +42,6 @@
 
     <!-- Botón Crear -->
     <div class="d-flex justify-content-end mt-4">
-        <asp:Button ID="btnCrear" runat="server" Text="Crear" CssClass="btn btn-primary px-4 rounded-pill" />
+        <asp:Button ID="btnCrear" runat="server" Text="Crear" CssClass="btn btn-primary px-4 rounded-pill" OnClick="btnCrear_Click" />
     </div>
 </asp:Content>

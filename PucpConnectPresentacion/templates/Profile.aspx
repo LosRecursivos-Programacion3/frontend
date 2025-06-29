@@ -49,50 +49,34 @@
 
         <!-- Publicaciones -->
         <div class="p-4">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <div class="d-flex align-items-center mb-2">
-                         <div class="avatar-mini">
-                             <img src="../Images/profile-0.jpg" class="rounded-circle me-3" alt="Foto perfil" />
-                         </div>
-                        <div>
-                            <strong>Heider Sanchez</strong><br />
-                            <span class="text-muted">Ing. Informática · 20:10 · 29/05/25</span>
+            <asp:Label ID="lblSinPublicaciones" runat="server" CssClass="text-center text-muted d-block my-3" Visible="false" Text="Aún no existen publicaciones."></asp:Label>
+            <asp:Repeater ID="rptPublicaciones" runat="server">
+                <ItemTemplate>
+                    <div class="card shadow-sm mb-3">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="avatar-mini">
+                                    <img src='<%# Eval("RutaImagenAutor") %>' class="rounded-circle me-3" alt="Foto perfil" />
+                                </div>
+                                <div>
+                                    <strong><%# Eval("NombreAutor") %></strong><br />
+                                    <span class="text-muted"><%# Eval("CarreraYFecha") %></span>
+                                </div>
+                            </div>
+                            <p><%# Eval("Contenido") %></p>
+                            <div class="row g-2 mb-3">
+                                <asp:Image ID="imgPublicacion" runat="server" CssClass="img-fluid post-img" ImageUrl='<%# Eval("ImagenPost") %>' Visible='<%# Eval("ImagenPost") != null %>' AlternateText="Publicación" />
+                            </div>
+                            <div class="d-flex justify-content-around mt-3 reaction-icons">
+                                <div><i class="fa-solid fa-comment"></i>200</div>
+                                <div><i class="fa-solid fa-heart"></i> 200</div>
+                                <div><i class="fa-solid fa-share"></i> 200</div>
+                            </div>
                         </div>
                     </div>
-                    <p>EMPEZARON LAS INTERFACUS 2025!!</p>
-                    <div class="row g-2 mb-3">
-                        <img src="../Images/interfacus.jpg" class="img-fluid post-img" alt="Publicación" />
-                    </div>
-                    <div class="d-flex justify-content-around mt-3 reaction-icons">
-                        <div><i class="fa-solid fa-comment"></i> 144</div>
-                        <div><i class="fa-solid fa-heart"></i> 130</div>
-                        <div><i class="fa-solid fa-share"></i> 40</div>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <div class="d-flex align-items-center mb-3">
-                         <div class="avatar-mini">
-                             <img src="../Images/profile-0.jpg" class="rounded-circle me-3" alt="Foto perfil" />
-                         </div>
-                        <div>
-                            <strong>Heider Sanchez</strong><br />
-                            <span class="text-muted">Ing. Informática · 20:10 · 13/04/25</span>
-                        </div>
-                    </div>
-                    <div class="row g-2 mb-3">
-                        <img src="../Images/pucp-image.jpg" class="img-fluid post-img" alt="Publicación" />
-                    </div>
-                    <div class="d-flex justify-content-around mt-3 reaction-icons">
-                        <div><i class="fa-solid fa-comment"></i> 346</div>
-                        <div><i class="fa-solid fa-heart"></i> 49</div>
-                        <div><i class="fa-solid fa-share"></i> 107</div>
-                    </div>
-                </div>
-            </div>
+                </ItemTemplate>
+            </asp:Repeater>
+            
         </div>
     </div>
 </asp:Content>

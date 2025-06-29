@@ -17,7 +17,7 @@
 
         <div class="registro-form">
             <h2 class="mb-4">Crear Usuario</h2>
-            <asp:Label ID="LblMensaje" runat="server" ForeColor="Red"></asp:Label>
+            <asp:Label ID="LblMensaje" runat="server" ForeColor="Green"></asp:Label>
 
             <asp:Panel ID="PanelRegistro" runat="server" DefaultButton="BtnRegistrar">
                 <div class="row">

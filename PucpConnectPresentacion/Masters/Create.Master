@@ -39,7 +39,7 @@
             </div>
             <div class="dropdown">
                 <a class="d-flex align-items-center text-white text-decoration-none" href="#" id="dropdownUserMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <strong>Heider Sanchez</strong>
+                    <strong><asp:Label ID="lblNombreUsuario" runat="server" CssClass="text-white" /></strong>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end text-small shadow" aria-labelledby="dropdownUserMenu">
                     <li>
@@ -48,10 +48,15 @@
                         </a>
                     </li>
                     <li>
+                        <a class="dropdown-item" href="FriendRequests.aspx">
+                            <i class="fa-solid fa-user-group"></i> Solicitudes
+                        </a>
+                    </li>
+                    <li>
                         <hr class="dropdown-divider">
                     </li>
                     <li>
-                        <a class="dropdown-item text-danger" href="#">
+                        <a class="dropdown-item text-danger" href="Logout.aspx">
                             <i class="fa-solid fa-right-from-bracket me-2"></i> Cerrar Sesión
                         </a>
                     </li>
