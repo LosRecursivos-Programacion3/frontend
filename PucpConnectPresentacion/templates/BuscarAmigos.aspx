@@ -1,77 +1,74 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masters/SectionLayout.Master" AutoEventWireup="true" CodeBehind="BuscarAmigos.aspx.cs" Inherits="PucpConnectPresentacion.BuscarAmigos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BuscarAmigos.aspx.cs" Inherits="PucpConnectPresentacion.BuscarAmigos" MasterPageFile="~/Masters/SectionLayout.Master" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" />
+
     <div class="container my-4">
         <div class="d-flex justify-content-between mb-3">
             <h2>Buscar amigos</h2>
             <button class="btn btn-match fw-bold px-4">Match</button>
         </div>
+
         <div class="row g-4">
-            <%-- Tarjeta 1 --%>
-            <div class="col-md-6">
-                <div class="card card-custom">
-                    <img src="../Images/profile-4.jpeg" class="card-img-top" alt="Fondo 1">
-                    <div class="card-body">
-                        <div class="profile">
-                            <img src="../Images/profile-4.jpeg" class="rounded-circle me-3" alt="Foto perfil" />
-                        </div>
-                        <div class="info-perfil">
-                            <h5 class="card-title titulo-nombre">Rony Cueva <button class="btn btn-primary">Enviar solicitud</button></h5>
-                            <p class="descripcion">Busco conectar con personas interesadas en la transformación digital.</p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <asp:Repeater ID="rptSugeridos" runat="server">
+                <ItemTemplate>
+                    <div class="col-md-6">
+                        <div class="card card-custom">
+                            <img src='<%# Eval("fotoPerfil", "../Images/{0}") %>' class="card-img-top" alt="Fondo">
+                            <div class="card-body">
+                                <div class="profile">
+                                    <img src='<%# Eval("fotoPerfil", "../Images/{0}") %>' class="rounded-circle me-3" alt="Foto perfil" />
+                                </div>
+                                <div class="info-perfil">
+                                    <h5 class="card-title titulo-nombre">
+                                        <%# Eval("nombre") %>
+                                    </h5>
+                                    <p class="descripcion"><%# Eval("biografia") %></p>
+                                    <br />
+                                    <p class="text-muted">
+                                        Edad: <%# Eval("edad") %> |
+                                        Carrera: <%# Eval("carrera") %> |
+                                    </p>
+                                    <p class="text-muted"><%# Eval("ubicacion") %></p>
 
-            <%-- Tarjeta 2 --%>
-            <div class="col-md-6">
-                <div class="card card-custom">
-                    <img src="../Images/profile-5.jpg" class="card-img-top" alt="Fondo 1">
-                    <div class="card-body">
-                        <div class="profile">
-                            <img src="../Images/profile-5.jpg" class="rounded-circle me-3" alt="Foto perfil" />
-                        </div>
-                        <div class="info-perfil">
-                            <h5 class="card-title titulo-nombre">David Allasi <button class="btn btn-primary">Enviar solicitud</button></h5>
-                            <p class="descripcion">Me encanta aprender cosas nuevas y compartir curiosidades.</p>
-                
+                                    <asp:Button ID="btnSolicitar" runat="server" CssClass="btn btn-primary mt-2"
+                                        Text="Enviar solicitud"
+                                        CommandArgument='<%# Eval("idAlumno") %>'
+                                        OnClick="btnSolicitar_Click"
+                                        OnClientClick="return mostrarConfirmacion(this);" />
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <%-- Tarjeta 3 --%>
-            <div class="col-md-6">
-                <div class="card card-custom">
-                    <img src="../Images/profile-3.jpeg" class="card-img-top" alt="Fondo 1">
-                    <div class="card-body">
-                        <div class="profile">
-                            <img src="../Images/profile-3.jpeg" class="rounded-circle me-3" alt="Foto perfil" />
-                        </div>
-                        <div class="info-perfil">
-                            <h5 class="card-title titulo-nombre">Angeles Salazar <button class="btn btn-primary">Enviar solicitud</button></h5>
-                             <p class="descripcion">Apasionada por la fotografía urbana y de paisajes.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <%-- Tarjeta 4 --%>
-            <div class="col-md-6">
-                <div class="card card-custom">
-                    <img src="../Images/profile-4.jpeg" class="card-img-top" alt="Fondo 1">
-                    <div class="card-body">
-                        <div class="profile">
-                            <img src="../Images/profile-4.jpeg" class="rounded-circle me-3" alt="Foto perfil" />
-                        </div>
-                        <div class="info-perfil">
-                            <h5 class="card-title titulo-nombre">Miguel Galvez <button class="btn btn-primary">Enviar solicitud</button></h5>
-                             <p class="descripcion">Apasionado del café y el espacio. Disfruto de una buena taza mientras leo sobre el universo.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </ItemTemplate>
+            </asp:Repeater>
         </div>
     </div>
+
+    <script type="text/javascript">
+        function mostrarConfirmacion(btn) {
+            event.preventDefault(); // Detiene el postback automático
+
+            Swal.fire({
+                title: '¿Enviar solicitud?',
+                text: "¿Deseas enviar una solicitud de amistad?",
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonText: 'Sí, enviar',
+                cancelButtonText: 'Cancelar'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Ejecuta el postback manualmente
+                    __doPostBack(btn.name, '');
+                }
+            });
+
+            return false; // Siempre detener el postback hasta confirmar
+        }
+    </script>
 </asp:Content>

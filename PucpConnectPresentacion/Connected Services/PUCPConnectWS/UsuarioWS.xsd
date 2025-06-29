@@ -4,14 +4,50 @@
   <xs:element name="actualizarAlumnoResponse" type="tns:actualizarAlumnoResponse" />
   <xs:element name="autenticarUsuario" type="tns:autenticarUsuario" />
   <xs:element name="autenticarUsuarioResponse" type="tns:autenticarUsuarioResponse" />
+  <xs:element name="bloquearUsuario" type="tns:bloquearUsuario" />
+  <xs:element name="bloquearUsuarioResponse" type="tns:bloquearUsuarioResponse" />
+  <xs:element name="cambiarVisibilidad" type="tns:cambiarVisibilidad" />
+  <xs:element name="cambiarVisibilidadResponse" type="tns:cambiarVisibilidadResponse" />
+  <xs:element name="enviarSolicitudAmistad" type="tns:enviarSolicitudAmistad" />
+  <xs:element name="enviarSolicitudAmistadResponse" type="tns:enviarSolicitudAmistadResponse" />
+  <xs:element name="hacerMatch" type="tns:hacerMatch" />
+  <xs:element name="hacerMatchResponse" type="tns:hacerMatchResponse" />
   <xs:element name="listarIntereses" type="tns:listarIntereses" />
   <xs:element name="listarInteresesResponse" type="tns:listarInteresesResponse" />
+  <xs:element name="listarMatches" type="tns:listarMatches" />
+  <xs:element name="listarMatchesResponse" type="tns:listarMatchesResponse" />
+  <xs:element name="listarSugerencias" type="tns:listarSugerencias" />
+  <xs:element name="listarSugerenciasResponse" type="tns:listarSugerenciasResponse" />
+  <xs:element name="listarSugeridos" type="tns:listarSugeridos" />
+  <xs:element name="listarSugeridosResponse" type="tns:listarSugeridosResponse" />
   <xs:element name="obtenerInteresesUsuario" type="tns:obtenerInteresesUsuario" />
   <xs:element name="obtenerInteresesUsuarioResponse" type="tns:obtenerInteresesUsuarioResponse" />
   <xs:element name="registrarAlumno" type="tns:registrarAlumno" />
   <xs:element name="registrarAlumnoResponse" type="tns:registrarAlumnoResponse" />
   <xs:element name="registrarInteresesUsuario" type="tns:registrarInteresesUsuario" />
   <xs:element name="registrarInteresesUsuarioResponse" type="tns:registrarInteresesUsuarioResponse" />
+  <xs:complexType name="bloquearUsuario">
+    <xs:sequence>
+      <xs:element name="idBloqueador" type="xs:int" />
+      <xs:element name="idBloqueado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bloquearUsuarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cambiarVisibilidad">
+    <xs:sequence>
+      <xs:element name="idUsuario" type="xs:int" />
+      <xs:element name="visible" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cambiarVisibilidadResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="listarIntereses">
     <xs:sequence />
   </xs:complexType>
@@ -27,26 +63,25 @@
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="registrarInteresesUsuario">
+  <xs:complexType name="hacerMatch">
     <xs:sequence>
-      <xs:element name="idAlumno" type="xs:int" />
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="ids" type="xs:int" />
+      <xs:element name="idAlumnoUno" type="xs:int" />
+      <xs:element name="idAlumnoDos" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="registrarInteresesUsuarioResponse">
+  <xs:complexType name="hacerMatchResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="autenticarUsuario">
+  <xs:complexType name="listarSugeridos">
     <xs:sequence>
-      <xs:element minOccurs="0" name="email" type="xs:string" />
-      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element name="idAlumno" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="autenticarUsuarioResponse">
+  <xs:complexType name="listarSugeridosResponse">
     <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="tns:alumno" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:alumno" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="alumno">
@@ -78,14 +113,15 @@
   <xs:complexType name="localDateTime" final="extension restriction">
     <xs:sequence />
   </xs:complexType>
-  <xs:complexType name="obtenerInteresesUsuario">
+  <xs:complexType name="autenticarUsuario">
     <xs:sequence>
-      <xs:element name="idAlumno" type="xs:int" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="obtenerInteresesUsuarioResponse">
+  <xs:complexType name="autenticarUsuarioResponse">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:interes" />
+      <xs:element minOccurs="0" name="return" type="tns:alumno" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="registrarAlumno">
@@ -122,6 +158,56 @@
   <xs:complexType name="actualizarAlumnoResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarSugerencias">
+    <xs:sequence>
+      <xs:element name="idUsuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarSugerenciasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:usuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="registrarInteresesUsuario">
+    <xs:sequence>
+      <xs:element name="idAlumno" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ids" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="registrarInteresesUsuarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviarSolicitudAmistad">
+    <xs:sequence>
+      <xs:element name="idUsuario1" type="xs:int" />
+      <xs:element name="idUsuario2" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviarSolicitudAmistadResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="obtenerInteresesUsuario">
+    <xs:sequence>
+      <xs:element name="idAlumno" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerInteresesUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:interes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarMatches">
+    <xs:sequence>
+      <xs:element name="idUsuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarMatchesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:usuario" />
     </xs:sequence>
   </xs:complexType>
 </xs:schema>
