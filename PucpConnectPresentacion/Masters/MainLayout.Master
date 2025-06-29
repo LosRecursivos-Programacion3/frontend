@@ -30,6 +30,11 @@
                         </a>
                     </li>
                     <li>
+                        <a class="dropdown-item" href="FriendRequests.aspx">
+                            <i class="fa-solid fa-user-group"></i> Solicitudes
+                        </a>
+                    </li>
+                    <li>
                         <hr class="dropdown-divider">
                     </li>
                     <li>

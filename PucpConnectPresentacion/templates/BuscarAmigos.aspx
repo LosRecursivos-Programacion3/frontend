@@ -33,8 +33,9 @@
                                     <p class="text-muted">
                                         Edad: <%# Eval("edad") %> |
                                         Carrera: <%# Eval("carrera") %> |
+                                        <%# Eval("ubicacion") %>
                                     </p>
-                                    <p class="text-muted"><%# Eval("ubicacion") %></p>
+                                        
 
                                     <asp:Button ID="btnSolicitar" runat="server" CssClass="btn btn-primary mt-2"
                                         Text="Enviar solicitud"

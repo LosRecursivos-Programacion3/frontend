@@ -11,7 +11,7 @@ namespace PucpConnectPresentacion.templates
 {
 
 
-    public partial class Profile_Friends
+    public partial class FriendRequests
     {
 
         /// <summary>
@@ -33,39 +33,39 @@ namespace PucpConnectPresentacion.templates
         protected global::System.Web.UI.WebControls.Label lblNombrePerfil;
 
         /// <summary>
-        /// Control lblCarrera.
+        /// Control lblSinSolicitudesEnviadas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCarrera;
+        protected global::System.Web.UI.WebControls.Label lblSinSolicitudesEnviadas;
 
         /// <summary>
-        /// Control lblBiografia.
+        /// Control gvSolicitudesEnviadas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBiografia;
+        protected global::System.Web.UI.WebControls.GridView gvSolicitudesEnviadas;
 
         /// <summary>
-        /// Control lnkEditarPerfil.
+        /// Control lblSinSolicitudesRecibidas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lnkEditarPerfil;
+        protected global::System.Web.UI.WebControls.Label lblSinSolicitudesRecibidas;
 
         /// <summary>
-        /// Control rptAmigos.
+        /// Control gvSolicitudesRecibidas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptAmigos;
+        protected global::System.Web.UI.WebControls.GridView gvSolicitudesRecibidas;
     }
 }

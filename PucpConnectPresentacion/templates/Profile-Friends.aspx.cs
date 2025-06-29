@@ -9,9 +9,10 @@ namespace PucpConnectPresentacion.templates
 {
     public partial class Profile_Friends : System.Web.UI.Page
     {
+        private UsuarioWSClient usuarioWSClient;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            usuarioWSClient = new PUCPConnectWS.UsuarioWSClient();
             var usuarioActual = (alumno)Session["usuarioActual"];
             if (usuarioActual == null)
             {
@@ -23,7 +24,7 @@ namespace PucpConnectPresentacion.templates
             lblCarrera.Text = usuarioActual.carrera;
             lblBiografia.Text = usuarioActual.biografia;
             // Asignar imagen de perfil dinámica
-            string nombreArchivo = usuarioActual.fotoPerfil; // Ejemplo: "foto123.jpg"
+            string nombreArchivo = usuarioActual.fotoPerfil;
             if (!string.IsNullOrEmpty(nombreArchivo))
             {
                 imgPerfil.ImageUrl = "../Images/" + nombreArchivo;
@@ -32,6 +33,10 @@ namespace PucpConnectPresentacion.templates
             {
                 imgPerfil.ImageUrl = "../Images/profile-0.jpg"; // Imagen por defecto
             }
+
+            var amigos = usuarioWSClient.listarAmigosPorId(usuarioActual.idAlumno);
+            rptAmigos.DataSource = amigos;
+            rptAmigos.DataBind();
         }
 
         protected void btnConfigurar_Click(object sender, EventArgs e)

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://ws.pucpconnect.pe.edu.pucp/" targetNamespace="http://ws.pucpconnect.pe.edu.pucp/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="aceptarSolicitud" type="tns:aceptarSolicitud" />
+  <xs:element name="aceptarSolicitudResponse" type="tns:aceptarSolicitudResponse" />
   <xs:element name="actualizarAlumno" type="tns:actualizarAlumno" />
   <xs:element name="actualizarAlumnoResponse" type="tns:actualizarAlumnoResponse" />
   <xs:element name="autenticarUsuario" type="tns:autenticarUsuario" />
@@ -8,24 +10,57 @@
   <xs:element name="bloquearUsuarioResponse" type="tns:bloquearUsuarioResponse" />
   <xs:element name="cambiarVisibilidad" type="tns:cambiarVisibilidad" />
   <xs:element name="cambiarVisibilidadResponse" type="tns:cambiarVisibilidadResponse" />
+  <xs:element name="cancelarSolicitud" type="tns:cancelarSolicitud" />
+  <xs:element name="cancelarSolicitudResponse" type="tns:cancelarSolicitudResponse" />
   <xs:element name="enviarSolicitudAmistad" type="tns:enviarSolicitudAmistad" />
   <xs:element name="enviarSolicitudAmistadResponse" type="tns:enviarSolicitudAmistadResponse" />
   <xs:element name="hacerMatch" type="tns:hacerMatch" />
   <xs:element name="hacerMatchResponse" type="tns:hacerMatchResponse" />
+  <xs:element name="listarAmigosPorId" type="tns:listarAmigosPorId" />
+  <xs:element name="listarAmigosPorIdResponse" type="tns:listarAmigosPorIdResponse" />
   <xs:element name="listarIntereses" type="tns:listarIntereses" />
   <xs:element name="listarInteresesResponse" type="tns:listarInteresesResponse" />
   <xs:element name="listarMatches" type="tns:listarMatches" />
   <xs:element name="listarMatchesResponse" type="tns:listarMatchesResponse" />
+  <xs:element name="listarSolicitudesEnviadas" type="tns:listarSolicitudesEnviadas" />
+  <xs:element name="listarSolicitudesEnviadasResponse" type="tns:listarSolicitudesEnviadasResponse" />
+  <xs:element name="listarSolicitudesRecibidas" type="tns:listarSolicitudesRecibidas" />
+  <xs:element name="listarSolicitudesRecibidasResponse" type="tns:listarSolicitudesRecibidasResponse" />
   <xs:element name="listarSugerencias" type="tns:listarSugerencias" />
   <xs:element name="listarSugerenciasResponse" type="tns:listarSugerenciasResponse" />
   <xs:element name="listarSugeridos" type="tns:listarSugeridos" />
   <xs:element name="listarSugeridosResponse" type="tns:listarSugeridosResponse" />
   <xs:element name="obtenerInteresesUsuario" type="tns:obtenerInteresesUsuario" />
   <xs:element name="obtenerInteresesUsuarioResponse" type="tns:obtenerInteresesUsuarioResponse" />
+  <xs:element name="rechazarSolicitud" type="tns:rechazarSolicitud" />
+  <xs:element name="rechazarSolicitudResponse" type="tns:rechazarSolicitudResponse" />
   <xs:element name="registrarAlumno" type="tns:registrarAlumno" />
   <xs:element name="registrarAlumnoResponse" type="tns:registrarAlumnoResponse" />
   <xs:element name="registrarInteresesUsuario" type="tns:registrarInteresesUsuario" />
   <xs:element name="registrarInteresesUsuarioResponse" type="tns:registrarInteresesUsuarioResponse" />
+  <xs:complexType name="listarSolicitudesRecibidas">
+    <xs:sequence>
+      <xs:element name="idAlumno" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarSolicitudesRecibidasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:amistad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="amistad">
+    <xs:sequence>
+      <xs:element name="estado" type="xs:int" />
+      <xs:element minOccurs="0" name="fecha" type="xs:string" />
+      <xs:element minOccurs="0" name="fotoPerfilAlumnoDos" type="xs:string" />
+      <xs:element minOccurs="0" name="fotoPerfilAlumnoUno" type="xs:string" />
+      <xs:element name="idAlumnoDos" type="xs:int" />
+      <xs:element name="idAlumnoUno" type="xs:int" />
+      <xs:element name="idAmistad" type="xs:int" />
+      <xs:element minOccurs="0" name="nombreAlumnoDos" type="xs:string" />
+      <xs:element minOccurs="0" name="nombreAlumnoUno" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="bloquearUsuario">
     <xs:sequence>
       <xs:element name="idBloqueador" type="xs:int" />
@@ -113,6 +148,16 @@
   <xs:complexType name="localDateTime" final="extension restriction">
     <xs:sequence />
   </xs:complexType>
+  <xs:complexType name="listarAmigosPorId">
+    <xs:sequence>
+      <xs:element name="idUsuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarAmigosPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:alumno" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="autenticarUsuario">
     <xs:sequence>
       <xs:element minOccurs="0" name="email" type="xs:string" />
@@ -170,6 +215,14 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:usuario" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="cancelarSolicitud">
+    <xs:sequence>
+      <xs:element name="idAmistad" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cancelarSolicitudResponse">
+    <xs:sequence />
+  </xs:complexType>
   <xs:complexType name="registrarInteresesUsuario">
     <xs:sequence>
       <xs:element name="idAlumno" type="xs:int" />
@@ -180,6 +233,14 @@
     <xs:sequence>
       <xs:element name="return" type="xs:boolean" />
     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="aceptarSolicitud">
+    <xs:sequence>
+      <xs:element name="idAmistad" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="aceptarSolicitudResponse">
+    <xs:sequence />
   </xs:complexType>
   <xs:complexType name="enviarSolicitudAmistad">
     <xs:sequence>
@@ -200,6 +261,16 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:interes" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="listarSolicitudesEnviadas">
+    <xs:sequence>
+      <xs:element name="idAlumno" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarSolicitudesEnviadasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:amistad" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="listarMatches">
     <xs:sequence>
       <xs:element name="idUsuario" type="xs:int" />
@@ -209,5 +280,13 @@
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:usuario" />
     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rechazarSolicitud">
+    <xs:sequence>
+      <xs:element name="idAmistad" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rechazarSolicitudResponse">
+    <xs:sequence />
   </xs:complexType>
 </xs:schema>

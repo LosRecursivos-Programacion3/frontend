@@ -117,6 +117,27 @@
     <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.enviarSolicitudAmistadResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.listarSolicitudesEnviadasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.listarSolicitudesRecibidasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.amistad.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.aceptarSolicitudResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.cancelarSolicitudResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.rechazarSolicitudResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.listarAmigosPorIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\PUCPConnectWS\UsuarioWS.wsdl" />
     <None Include="Connected Services\PUCPConnectWS\UsuarioWS.xsd">
       <SubType>Designer</SubType>
@@ -132,6 +153,7 @@
     <Content Include="templates\CreateEvent.aspx" />
     <Content Include="templates\CreatePost.aspx" />
     <Content Include="templates\EditProfile.aspx" />
+    <Content Include="templates\FriendRequests.aspx" />
     <Content Include="templates\Profile-Events.aspx" />
     <Content Include="templates\Profile-Friends.aspx" />
     <Content Include="templates\SelectInterest.aspx" />
@@ -182,6 +204,13 @@
     </Compile>
     <Compile Include="templates\EditProfile.aspx.designer.cs">
       <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\FriendRequests.aspx.cs">
+      <DependentUpon>FriendRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\FriendRequests.aspx.designer.cs">
+      <DependentUpon>FriendRequests.aspx</DependentUpon>
     </Compile>
     <Compile Include="templates\Profile-Events.aspx.cs">
       <DependentUpon>Profile-Events.aspx</DependentUpon>
