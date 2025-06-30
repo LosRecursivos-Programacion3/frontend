@@ -69,6 +69,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\MensajeWSReference\configuration91.svcinfo" />
+    <None Include="Connected Services\MensajeWSReference\configuration.svcinfo" />
+    <Content Include="Connected Services\MensajeWSReference\PucpConnectPresentacion.MensajeWSReference.eliminarMensajeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MensajeWSReference\PucpConnectPresentacion.MensajeWSReference.enviarMensajeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MensajeWSReference\PucpConnectPresentacion.MensajeWSReference.obtenerMensajesEntreUsuariosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MensajeWSReference\PucpConnectPresentacion.MensajeWSReference.mensajeDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\MensajeWSReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -138,6 +156,28 @@
     <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.listarAmigosPorIdResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.listarAmigosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\MensajeWSReference\MensajeWS.wsdl" />
+    <None Include="Connected Services\MensajeWSReference\MensajeWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.crearPostResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.listarPostParaMainResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.listarPostPorIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.post.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.postConAutor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\PUCPConnectWS\UsuarioWS.wsdl" />
     <None Include="Connected Services\PUCPConnectWS\UsuarioWS.xsd">
       <SubType>Designer</SubType>
@@ -154,6 +194,7 @@
     <Content Include="templates\CreatePost.aspx" />
     <Content Include="templates\EditProfile.aspx" />
     <Content Include="templates\FriendRequests.aspx" />
+    <Content Include="templates\Mensajes.aspx" />
     <Content Include="templates\Profile-Events.aspx" />
     <Content Include="templates\Profile-Friends.aspx" />
     <Content Include="templates\SelectInterest.aspx" />
@@ -172,6 +213,11 @@
     <Content Include="templates\Login.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\MensajeWSReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\PUCPConnectWS\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -211,6 +257,13 @@
     </Compile>
     <Compile Include="templates\FriendRequests.aspx.designer.cs">
       <DependentUpon>FriendRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\Mensajes.aspx.cs">
+      <DependentUpon>Mensajes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\Mensajes.aspx.designer.cs">
+      <DependentUpon>Mensajes.aspx</DependentUpon>
     </Compile>
     <Compile Include="templates\Profile-Events.aspx.cs">
       <DependentUpon>Profile-Events.aspx</DependentUpon>
@@ -353,6 +406,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\MensajeWSReference\" />
     <WCFMetadataStorage Include="Connected Services\PUCPConnectWS\" />
   </ItemGroup>
   <PropertyGroup>

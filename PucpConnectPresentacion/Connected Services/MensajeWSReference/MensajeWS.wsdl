@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ws.pucpconnect.pe.edu.pucp/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="MensajeWS" targetNamespace="http://ws.pucpconnect.pe.edu.pucp/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/PucpConnectWS/MensajeWS?xsd=1" namespace="http://ws.pucpconnect.pe.edu.pucp/" />
+    </xsd:schema>
+  </types>
+  <message name="eliminarMensaje">
+    <part name="parameters" element="tns:eliminarMensaje" />
+  </message>
+  <message name="eliminarMensajeResponse">
+    <part name="parameters" element="tns:eliminarMensajeResponse" />
+  </message>
+  <message name="enviarMensaje">
+    <part name="parameters" element="tns:enviarMensaje" />
+  </message>
+  <message name="enviarMensajeResponse">
+    <part name="parameters" element="tns:enviarMensajeResponse" />
+  </message>
+  <message name="obtenerMensajesEntreUsuarios">
+    <part name="parameters" element="tns:obtenerMensajesEntreUsuarios" />
+  </message>
+  <message name="obtenerMensajesEntreUsuariosResponse">
+    <part name="parameters" element="tns:obtenerMensajesEntreUsuariosResponse" />
+  </message>
+  <portType name="MensajeWS">
+    <operation name="eliminarMensaje">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/MensajeWS/eliminarMensajeRequest" message="tns:eliminarMensaje" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/MensajeWS/eliminarMensajeResponse" message="tns:eliminarMensajeResponse" />
+    </operation>
+    <operation name="enviarMensaje">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/MensajeWS/enviarMensajeRequest" message="tns:enviarMensaje" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/MensajeWS/enviarMensajeResponse" message="tns:enviarMensajeResponse" />
+    </operation>
+    <operation name="obtenerMensajesEntreUsuarios">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/MensajeWS/obtenerMensajesEntreUsuariosRequest" message="tns:obtenerMensajesEntreUsuarios" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/MensajeWS/obtenerMensajesEntreUsuariosResponse" message="tns:obtenerMensajesEntreUsuariosResponse" />
+    </operation>
+  </portType>
+  <binding name="MensajeWSPortBinding" type="tns:MensajeWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="eliminarMensaje">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="enviarMensaje">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerMensajesEntreUsuarios">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="MensajeWS">
+    <port name="MensajeWSPort" binding="tns:MensajeWSPortBinding">
+      <soap:address location="http://localhost:8080/PucpConnectWS/MensajeWS" />
+    </port>
+  </service>
+</definitions>

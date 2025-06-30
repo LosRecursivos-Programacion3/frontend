@@ -21,7 +21,7 @@
         <a class="return-button" href="Main.aspx"><i class="fa-solid fa-arrow-left"></i> Regresar</a>
         <a href="Main.aspx"><i class="fa-solid fa-house"></i> Inicio</a>
         <a href="BuscarAmigos.aspx"><i class="fa-solid fa-magnifying-glass"></i> Búsqueda de amigos</a>
-        <a href="#"><i class="fa-solid fa-message"></i> Mensajes</a>
+        <a href="Mensajes.aspx"><i class="fa-solid fa-message"></i> Mensajes</a>
         <a href="Profile-Friends.aspx"><i class="fa-solid fa-user-group"></i> Amigos</a>
         <a href="Events.aspx"><i class="fa-regular fa-calendar"></i> Eventos</a>
         <a href="#"><i class="fa-solid fa-calendar-plus"></i> Crear Evento</a>

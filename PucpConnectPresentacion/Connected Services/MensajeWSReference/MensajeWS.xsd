@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ws.pucpconnect.pe.edu.pucp/" targetNamespace="http://ws.pucpconnect.pe.edu.pucp/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarMensaje" type="tns:eliminarMensaje" />
+  <xs:element name="eliminarMensajeResponse" type="tns:eliminarMensajeResponse" />
+  <xs:element name="enviarMensaje" type="tns:enviarMensaje" />
+  <xs:element name="enviarMensajeResponse" type="tns:enviarMensajeResponse" />
+  <xs:element name="obtenerMensajesEntreUsuarios" type="tns:obtenerMensajesEntreUsuarios" />
+  <xs:element name="obtenerMensajesEntreUsuariosResponse" type="tns:obtenerMensajesEntreUsuariosResponse" />
+  <xs:complexType name="obtenerMensajesEntreUsuarios">
+    <xs:sequence>
+      <xs:element name="emisorId" type="xs:int" />
+      <xs:element name="receptorId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerMensajesEntreUsuariosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:mensajeDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="mensajeDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="contenido" type="xs:string" />
+      <xs:element name="emisorId" type="xs:int" />
+      <xs:element name="receptorId" type="xs:int" />
+      <xs:element minOccurs="0" name="timestamp" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviarMensaje">
+    <xs:sequence>
+      <xs:element name="emisorId" type="xs:int" />
+      <xs:element name="receptorId" type="xs:int" />
+      <xs:element minOccurs="0" name="contenido" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviarMensajeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarMensaje">
+    <xs:sequence>
+      <xs:element name="mensajeId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarMensajeResponse">
+    <xs:sequence />
+  </xs:complexType>
+</xs:schema>
