@@ -24,6 +24,8 @@
   <xs:element name="listarInteresesResponse" type="tns:listarInteresesResponse" />
   <xs:element name="listarMatches" type="tns:listarMatches" />
   <xs:element name="listarMatchesResponse" type="tns:listarMatchesResponse" />
+  <xs:element name="listarPostParaMain" type="tns:listarPostParaMain" />
+  <xs:element name="listarPostParaMainResponse" type="tns:listarPostParaMainResponse" />
   <xs:element name="listarPostPorId" type="tns:listarPostPorId" />
   <xs:element name="listarPostPorIdResponse" type="tns:listarPostPorIdResponse" />
   <xs:element name="listarSolicitudesEnviadas" type="tns:listarSolicitudesEnviadas" />
@@ -87,17 +89,6 @@
       <xs:element name="return" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="hacerMatch">
-    <xs:sequence>
-      <xs:element name="idAlumnoUno" type="xs:int" />
-      <xs:element name="idAlumnoDos" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="hacerMatchResponse">
-    <xs:sequence>
-      <xs:element name="return" type="xs:boolean" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="listarIntereses">
     <xs:sequence />
   </xs:complexType>
@@ -111,6 +102,17 @@
       <xs:element minOccurs="0" name="descripcion" type="xs:string" />
       <xs:element name="id" type="xs:int" />
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hacerMatch">
+    <xs:sequence>
+      <xs:element name="idAlumnoUno" type="xs:int" />
+      <xs:element name="idAlumnoDos" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hacerMatchResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listarSugeridos">
@@ -303,6 +305,29 @@
   <xs:complexType name="listarSolicitudesEnviadasResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:amistad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPostParaMain">
+    <xs:sequence>
+      <xs:element name="idUsuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPostParaMainResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:postConAutor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="postConAutor">
+    <xs:sequence>
+      <xs:element name="autorId" type="xs:int" />
+      <xs:element minOccurs="0" name="carreraAutor" type="xs:string" />
+      <xs:element minOccurs="0" name="contenido" type="xs:string" />
+      <xs:element name="estado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="fecha" type="xs:string" />
+      <xs:element minOccurs="0" name="fotoAutor" type="xs:string" />
+      <xs:element name="idPost" type="xs:int" />
+      <xs:element minOccurs="0" name="imagen" type="xs:string" />
+      <xs:element minOccurs="0" name="nombreAutor" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listarMatches">

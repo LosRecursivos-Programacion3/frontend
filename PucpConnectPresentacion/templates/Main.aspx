@@ -4,49 +4,36 @@
 </asp:Content>
 
 <asp:Content ID="mainContent" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <!-- Publicación 1 (es de prueba) -->
-        <div class="card mb-4 shadow-sm">
-            <div class="card-body">
-                <div class="d-flex align-items-center mb-2">
-                    <div class="avatar">
-                        <img src="../Images/profile-2.jpg" alt="Imagen publicación" />
-                    </div>
-                    <div>
-                        <strong>Rony Cueva</strong><br />
-                        <small class="text-muted">Ing. Informática</small>
-                    </div>
-                    <div class="ms-auto text-muted small">10:25 02/05/25</div>
-                </div>
-                <p>Fue una gran experiencia la que viví en aquel festival CES 2023, pude aprender mucho sobre tecnologías que en la actualidad son vitales, lo cual aportó mucho a mi carrera profesional.</p>
-                <img src="../Images/feed-1.jpg" class="post-img" alt="Imagen publicación" />
-                <div class="d-flex justify-content-around mt-3 reaction-icons">
-                    <div><i class="fa-solid fa-comment"></i> 346</div>
-                    <div><i class="fa-solid fa-heart"></i> 49</div>
-                    <div><i class="fa-solid fa-share"></i> 107</div>
-                </div>
-            </div>
-        </div>
+        <asp:Label ID="lblSinPublicaciones" runat="server" CssClass="text-muted d-block text-center my-3" Visible="false" Text="No hay publicaciones que mostrar, crea una o añade amigos para ver sus publicaciones."></asp:Label>
+        <asp:Repeater ID="rptMainFeed" runat="server">
+            <ItemTemplate>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="avatar">
+                                <img src='<%# Eval("RutaFotoPerfil") %>' alt="Imagen publicación" />
+                            </div>
+                            <div>
+                                <strong><%# Eval("NombreAutor") %></strong><br />
+                                <small class="text-muted"><%# Eval("CarreraAutor") %></small>
+                            </div>
+                            <div class="ms-auto text-muted small"><%# Eval("FechaPublicacion") %></div>
+                        </div>
+                        <p><%# Eval("Contenido") %></p>
 
-        <!-- Publicación 2 (es de prueba) -->
-        <div class="card mb-4 shadow-sm">
-            <div class="card-body">
-                <div class="d-flex align-items-center mb-2">
-                    <div class="avatar">
-                        <img src="../Images/profile-1.jpg" alt="Imagen publicación" />
+                        <%-- Mostrar la imagen solo si existe --%>
+                        <asp:PlaceHolder runat="server" Visible='<%# !string.IsNullOrEmpty(Eval("ImagenPost") as string) %>'>
+                            <img src='<%# Eval("ImagenPost") %>' class="post-img" alt="Imagen publicación" />
+                        </asp:PlaceHolder>
+
+                        <div class="d-flex justify-content-around mt-3 reaction-icons">
+                            <div><i class="fa-solid fa-comment"></i> 0</div>
+                            <div><i class="fa-solid fa-heart"></i> 0</div>
+                            <div><i class="fa-solid fa-share"></i> 0</div>
+                        </div>
                     </div>
-                    <div>
-                        <strong>Juan Quiroz</strong><br />
-                        <small class="text-muted">Derecho</small>
-                    </div>
-                    <div class="ms-auto text-muted small">16:23 24/04/25</div>
                 </div>
-                <p>Actualmente, con el incremento del alumnado en la PUCP, se hace muy complicado el encontrar un sitio de estudio en las bibliotecas. ¿Algún "point" para estudiar tranquilamente?</p>
-                <div class="d-flex justify-content-around mt-3 reaction-icons">
-                    <div><i class="fa-solid fa-comment"></i> 346</div>
-                    <div><i class="fa-solid fa-heart"></i> 49</div>
-                    <div><i class="fa-solid fa-share"></i> 107</div>
-                </div>
-            </div>
-        </div>
+            </ItemTemplate>
+        </asp:Repeater>
 </asp:Content>
 

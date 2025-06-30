@@ -43,9 +43,17 @@
 
                     <!-- Columna derecha -->
                     <div class="col-md-6">
-                        <div class="mb-3">
+                       <div class="mb-3">
                             <asp:Label ID="LblCarrera" runat="server" Text="Carrera" CssClass="form-label"></asp:Label>
-                            <asp:TextBox ID="TxtCarrera" runat="server" CssClass="form-control" />
+                            <asp:DropDownList ID="DropCarrera" runat="server" CssClass="form-control">
+                                <asp:ListItem Text="-- Selecciona tu carrera --" Value="" />
+                                <asp:ListItem Text="Ing. Informática" Value="Ingeniería Informática" />
+                                <asp:ListItem Text="Derecho" Value="Derecho" />
+                                <asp:ListItem Text="Psicología" Value="Psicología" />
+                                <asp:ListItem Text="Ing. Civil" Value="Ingeniería Civil" />
+                                <asp:ListItem Text="Arquitectura" Value="Arquitectura" />
+                                <asp:ListItem Text="Comunicación Audiovisual" Value="Comunicación Audiovisual" />
+                            </asp:DropDownList>
                         </div>
                         <div class="mb-3">
                             <asp:Label ID="LblFotoPerfil" runat="server" Text="Foto de Perfil" CssClass="form-label"></asp:Label>

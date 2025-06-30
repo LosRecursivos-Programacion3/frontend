@@ -123,13 +123,13 @@ namespace PucpConnectPresentacion.templates
         protected global::System.Web.UI.WebControls.Label LblCarrera;
 
         /// <summary>
-        /// Control TxtCarrera.
+        /// Control DropCarrera.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtCarrera;
+        protected global::System.Web.UI.WebControls.DropDownList DropCarrera;
 
         /// <summary>
         /// Control LblFotoPerfil.

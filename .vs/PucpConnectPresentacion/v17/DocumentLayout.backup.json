@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|c:\\users\\fernando\\source\\repos\\frontend\\pucpconnectpresentacion\\templates\\createpost.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\createpost.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\main.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\main.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\main.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\main.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\masters\\mainlayout.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\masters\\mainlayout.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|c:\\users\\fernando\\source\\repos\\frontend\\pucpconnectpresentacion\\templates\\profile.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\profile.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\profile-friends.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\profile-friends.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\profile-friends.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\profile-friends.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\profile-events.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\profile-events.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\createpost.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,16 +47,12 @@
       "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\profile.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\profile.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\profile.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\createpost.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\createpost.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\profile-friends.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\profile-friends.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\friendrequests.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
@@ -35,15 +63,7 @@
       "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\friendrequests.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\profile-friends.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\profile-friends.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\main.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\main.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|c:\\users\\fernando\\source\\repos\\frontend\\pucpconnectpresentacion\\templates\\logout.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\logout.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\logout.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
@@ -63,35 +83,15 @@
       "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\masters\\create.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\masters\\mainlayout.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\masters\\mainlayout.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\buscaramigos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\buscaramigos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\main.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\main.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\profile-events.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\profile-events.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\profile-events.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\profile-events.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|c:\\users\\fernando\\source\\repos\\frontend\\pucpconnectpresentacion\\templates\\createpost.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|C:\\Users\\Fernando\\Source\\Repos\\frontend\\pucpconnectpresentacion\\templates\\createpost.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FCCFCF5F-EF5C-4456-9866-3500768F5259}|PucpConnectPresentacion\\PucpConnectPresentacion.csproj|solutionrelative:pucpconnectpresentacion\\templates\\createpost.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -162,24 +162,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Profile.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Profile.aspx.cs",
-              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\Profile.aspx.cs",
-              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Profile.aspx.cs",
-              "RelativeToolTip": "PucpConnectPresentacion\\templates\\Profile.aspx.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAAwEwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T15:40:45.577Z",
+              "DocumentIndex": 1,
+              "Title": "Main.aspx",
+              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Main.aspx",
+              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\Main.aspx",
+              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Main.aspx",
+              "RelativeToolTip": "PucpConnectPresentacion\\templates\\Main.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-25T09:51:48.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
+              "Title": "Main.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Main.aspx.cs",
+              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\Main.aspx.cs",
+              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Main.aspx.cs",
+              "RelativeToolTip": "PucpConnectPresentacion\\templates\\Main.aspx.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwCIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T15:37:00.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Profile-Friends.aspx",
               "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Profile-Friends.aspx",
               "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\Profile-Friends.aspx",
@@ -192,67 +205,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Profile-Friends.aspx.cs",
               "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Profile-Friends.aspx.cs",
               "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\Profile-Friends.aspx.cs",
               "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Profile-Friends.aspx.cs",
               "RelativeToolTip": "PucpConnectPresentacion\\templates\\Profile-Friends.aspx.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBEAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T21:46:06.097Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FriendRequests.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\FriendRequests.aspx.cs",
-              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\FriendRequests.aspx.cs",
-              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\FriendRequests.aspx.cs",
-              "RelativeToolTip": "PucpConnectPresentacion\\templates\\FriendRequests.aspx.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCkAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T05:36:28.437Z",
+              "DocumentIndex": 5,
+              "Title": "Register.aspx",
+              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Register.aspx",
+              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\Register.aspx",
+              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Register.aspx",
+              "RelativeToolTip": "PucpConnectPresentacion\\templates\\Register.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-28T23:08:07.832Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Login.aspx",
-              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Login.aspx",
-              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\Login.aspx",
-              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Login.aspx",
-              "RelativeToolTip": "PucpConnectPresentacion\\templates\\Login.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-24T20:02:35.266Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreatePost.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\CreatePost.aspx.cs",
-              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\CreatePost.aspx.cs",
-              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\CreatePost.aspx.cs",
-              "RelativeToolTip": "PucpConnectPresentacion\\templates\\CreatePost.aspx.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAkwCwAAAAQAAAAAAAAAA==",
+              "Title": "Register.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Register.aspx.cs",
+              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\Register.aspx.cs",
+              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Register.aspx.cs",
+              "RelativeToolTip": "PucpConnectPresentacion\\templates\\Register.aspx.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAWwEcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T15:37:02.244Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CreatePost.aspx",
-              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\CreatePost.aspx",
-              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\CreatePost.aspx",
-              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\CreatePost.aspx",
-              "RelativeToolTip": "PucpConnectPresentacion\\templates\\CreatePost.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-26T18:14:50.821Z",
+              "WhenOpened": "2025-06-28T23:07:43.973Z",
               "EditorCaption": ""
             },
             {
@@ -270,59 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Main.aspx",
-              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Main.aspx",
-              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\Main.aspx",
-              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Main.aspx",
-              "RelativeToolTip": "PucpConnectPresentacion\\templates\\Main.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-25T09:51:48.511Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Logout.aspx",
-              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Logout.aspx",
-              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\Logout.aspx",
-              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Logout.aspx",
-              "RelativeToolTip": "PucpConnectPresentacion\\templates\\Logout.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-29T18:09:20.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FriendRequests.aspx",
-              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\FriendRequests.aspx",
-              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\FriendRequests.aspx",
-              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\FriendRequests.aspx",
-              "RelativeToolTip": "PucpConnectPresentacion\\templates\\FriendRequests.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-29T05:31:28.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Profile.Master.cs",
-              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\Masters\\Profile.Master.cs",
-              "RelativeDocumentMoniker": "PucpConnectPresentacion\\Masters\\Profile.Master.cs",
-              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\Masters\\Profile.Master.cs",
-              "RelativeToolTip": "PucpConnectPresentacion\\Masters\\Profile.Master.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T15:43:29.811Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 2,
               "Title": "MainLayout.Master",
               "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\Masters\\MainLayout.Master",
               "RelativeDocumentMoniker": "PucpConnectPresentacion\\Masters\\MainLayout.Master",
@@ -335,7 +270,117 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Profile-Events.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Profile-Events.aspx.cs",
+              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\Profile-Events.aspx.cs",
+              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Profile-Events.aspx.cs",
+              "RelativeToolTip": "PucpConnectPresentacion\\templates\\Profile-Events.aspx.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T21:45:56.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Profile.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Profile.aspx.cs",
+              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\Profile.aspx.cs",
+              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Profile.aspx.cs",
+              "RelativeToolTip": "PucpConnectPresentacion\\templates\\Profile.aspx.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAuwEMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T15:40:45.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CreatePost.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\CreatePost.aspx.cs",
+              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\CreatePost.aspx.cs",
+              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\CreatePost.aspx.cs",
+              "RelativeToolTip": "PucpConnectPresentacion\\templates\\CreatePost.aspx.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAWwCwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T15:37:02.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreatePost.aspx",
+              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\CreatePost.aspx",
+              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\CreatePost.aspx",
+              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\CreatePost.aspx",
+              "RelativeToolTip": "PucpConnectPresentacion\\templates\\CreatePost.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-26T18:14:50.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Login.aspx",
+              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Login.aspx",
+              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\Login.aspx",
+              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Login.aspx",
+              "RelativeToolTip": "PucpConnectPresentacion\\templates\\Login.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-24T20:02:35.266Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "FriendRequests.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\FriendRequests.aspx.cs",
+              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\FriendRequests.aspx.cs",
+              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\FriendRequests.aspx.cs",
+              "RelativeToolTip": "PucpConnectPresentacion\\templates\\FriendRequests.aspx.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T05:36:28.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Logout.aspx",
+              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Logout.aspx",
+              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\Logout.aspx",
+              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Logout.aspx",
+              "RelativeToolTip": "PucpConnectPresentacion\\templates\\Logout.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-29T18:09:20.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FriendRequests.aspx",
+              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\FriendRequests.aspx",
+              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\FriendRequests.aspx",
+              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\FriendRequests.aspx",
+              "RelativeToolTip": "PucpConnectPresentacion\\templates\\FriendRequests.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-29T05:31:28.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Profile.Master.cs",
+              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\Masters\\Profile.Master.cs",
+              "RelativeDocumentMoniker": "PucpConnectPresentacion\\Masters\\Profile.Master.cs",
+              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\Masters\\Profile.Master.cs",
+              "RelativeToolTip": "PucpConnectPresentacion\\Masters\\Profile.Master.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T15:43:29.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Create.Master",
               "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\Masters\\Create.Master",
               "RelativeDocumentMoniker": "PucpConnectPresentacion\\Masters\\Create.Master",
@@ -343,12 +388,11 @@
               "RelativeToolTip": "PucpConnectPresentacion\\Masters\\Create.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-25T06:54:30.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-25T06:54:30.074Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "Create.Master.cs",
               "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\Masters\\Create.Master.cs",
               "RelativeDocumentMoniker": "PucpConnectPresentacion\\Masters\\Create.Master.cs",
@@ -356,25 +400,11 @@
               "RelativeToolTip": "PucpConnectPresentacion\\Masters\\Create.Master.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T18:15:47.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T18:15:47.811Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Register.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Register.aspx.cs",
-              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\Register.aspx.cs",
-              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Register.aspx.cs",
-              "RelativeToolTip": "PucpConnectPresentacion\\templates\\Register.aspx.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAuwCgAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T23:07:43.973Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "MainLayout.Master.cs",
               "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\Masters\\MainLayout.Master.cs",
               "RelativeDocumentMoniker": "PucpConnectPresentacion\\Masters\\MainLayout.Master.cs",
@@ -382,25 +412,11 @@
               "RelativeToolTip": "PucpConnectPresentacion\\Masters\\MainLayout.Master.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T15:44:38.849Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-23T15:44:38.849Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Register.aspx",
-              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Register.aspx",
-              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\Register.aspx",
-              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Register.aspx",
-              "RelativeToolTip": "PucpConnectPresentacion\\templates\\Register.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-28T23:08:07.832Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "BuscarAmigos.aspx.cs",
               "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\BuscarAmigos.aspx.cs",
               "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\BuscarAmigos.aspx.cs",
@@ -408,8 +424,7 @@
               "RelativeToolTip": "PucpConnectPresentacion\\templates\\BuscarAmigos.aspx.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAYwGIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T23:05:35.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T23:05:35.589Z"
             },
             {
               "$type": "Document",
@@ -421,34 +436,7 @@
               "RelativeToolTip": "PucpConnectPresentacion\\templates\\CreatePost.aspx.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T17:18:25.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Main.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Main.aspx.cs",
-              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\Main.aspx.cs",
-              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Main.aspx.cs",
-              "RelativeToolTip": "PucpConnectPresentacion\\templates\\Main.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T15:37:00.11Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Profile-Events.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Profile-Events.aspx.cs",
-              "RelativeDocumentMoniker": "PucpConnectPresentacion\\templates\\Profile-Events.aspx.cs",
-              "ToolTip": "C:\\Users\\Fernando\\Source\\Repos\\frontend\\PucpConnectPresentacion\\templates\\Profile-Events.aspx.cs",
-              "RelativeToolTip": "PucpConnectPresentacion\\templates\\Profile-Events.aspx.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T21:45:56.755Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T17:18:25.739Z"
             },
             {
               "$type": "Document",
@@ -460,8 +448,7 @@
               "RelativeToolTip": "PucpConnectPresentacion\\templates\\Profile-Events.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-26T19:33:37.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T19:33:37.096Z"
             },
             {
               "$type": "Document",
