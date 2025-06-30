@@ -31,6 +31,12 @@ namespace PucpConnectPresentacion.templates
                 string biografia = TxtBiografia.Text.Trim();
                 string foto = FotoPerfilUpload.HasFile ? FotoPerfilUpload.FileName : "";
 
+                if (password.Length < 5)
+                {
+                    LblMensaje.ForeColor = System.Drawing.Color.Red;
+                    LblMensaje.Text = "La contraseña debe contener mínimo 6 caracteres.";
+                    return;
+                }
                 // Validaciones
                 if (nombre.Length > 50)
                 {

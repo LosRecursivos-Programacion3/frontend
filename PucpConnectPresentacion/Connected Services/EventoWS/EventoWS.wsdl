@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ws.pucpconnect.pe.edu.pucp/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="EventoWS" targetNamespace="http://ws.pucpconnect.pe.edu.pucp/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/PucpConnectWS/EventoWS?xsd=1" namespace="http://ws.pucpconnect.pe.edu.pucp/" />
+    </xsd:schema>
+  </types>
+  <message name="listarEventosPorInteres">
+    <part name="parameters" element="tns:listarEventosPorInteres" />
+  </message>
+  <message name="listarEventosPorInteresResponse">
+    <part name="parameters" element="tns:listarEventosPorInteresResponse" />
+  </message>
+  <message name="listarInteresesPorEvento">
+    <part name="parameters" element="tns:listarInteresesPorEvento" />
+  </message>
+  <message name="listarInteresesPorEventoResponse">
+    <part name="parameters" element="tns:listarInteresesPorEventoResponse" />
+  </message>
+  <message name="cancelarParticipacion">
+    <part name="parameters" element="tns:cancelarParticipacion" />
+  </message>
+  <message name="cancelarParticipacionResponse">
+    <part name="parameters" element="tns:cancelarParticipacionResponse" />
+  </message>
+  <message name="verificarParticipacionEvento">
+    <part name="parameters" element="tns:verificarParticipacionEvento" />
+  </message>
+  <message name="verificarParticipacionEventoResponse">
+    <part name="parameters" element="tns:verificarParticipacionEventoResponse" />
+  </message>
+  <message name="cancelarParticipacionEvento">
+    <part name="parameters" element="tns:cancelarParticipacionEvento" />
+  </message>
+  <message name="cancelarParticipacionEventoResponse">
+    <part name="parameters" element="tns:cancelarParticipacionEventoResponse" />
+  </message>
+  <message name="listarParticipantesPorEvento">
+    <part name="parameters" element="tns:listarParticipantesPorEvento" />
+  </message>
+  <message name="listarParticipantesPorEventoResponse">
+    <part name="parameters" element="tns:listarParticipantesPorEventoResponse" />
+  </message>
+  <message name="registrarParticipacionEvento">
+    <part name="parameters" element="tns:registrarParticipacionEvento" />
+  </message>
+  <message name="registrarParticipacionEventoResponse">
+    <part name="parameters" element="tns:registrarParticipacionEventoResponse" />
+  </message>
+  <message name="buscarEventoPorId">
+    <part name="parameters" element="tns:buscarEventoPorId" />
+  </message>
+  <message name="buscarEventoPorIdResponse">
+    <part name="parameters" element="tns:buscarEventoPorIdResponse" />
+  </message>
+  <message name="crearEvento">
+    <part name="parameters" element="tns:crearEvento" />
+  </message>
+  <message name="crearEventoResponse">
+    <part name="parameters" element="tns:crearEventoResponse" />
+  </message>
+  <message name="unirseAEvento">
+    <part name="parameters" element="tns:unirseAEvento" />
+  </message>
+  <message name="unirseAEventoResponse">
+    <part name="parameters" element="tns:unirseAEventoResponse" />
+  </message>
+  <message name="listarEventos">
+    <part name="parameters" element="tns:listarEventos" />
+  </message>
+  <message name="listarEventosResponse">
+    <part name="parameters" element="tns:listarEventosResponse" />
+  </message>
+  <portType name="EventoWS">
+    <operation name="listarEventosPorInteres">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/listarEventosPorInteresRequest" message="tns:listarEventosPorInteres" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/listarEventosPorInteresResponse" message="tns:listarEventosPorInteresResponse" />
+    </operation>
+    <operation name="listarInteresesPorEvento">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/listarInteresesPorEventoRequest" message="tns:listarInteresesPorEvento" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/listarInteresesPorEventoResponse" message="tns:listarInteresesPorEventoResponse" />
+    </operation>
+    <operation name="cancelarParticipacion">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/cancelarParticipacionRequest" message="tns:cancelarParticipacion" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/cancelarParticipacionResponse" message="tns:cancelarParticipacionResponse" />
+    </operation>
+    <operation name="verificarParticipacionEvento">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/verificarParticipacionEventoRequest" message="tns:verificarParticipacionEvento" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/verificarParticipacionEventoResponse" message="tns:verificarParticipacionEventoResponse" />
+    </operation>
+    <operation name="cancelarParticipacionEvento">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/cancelarParticipacionEventoRequest" message="tns:cancelarParticipacionEvento" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/cancelarParticipacionEventoResponse" message="tns:cancelarParticipacionEventoResponse" />
+    </operation>
+    <operation name="listarParticipantesPorEvento">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/listarParticipantesPorEventoRequest" message="tns:listarParticipantesPorEvento" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/listarParticipantesPorEventoResponse" message="tns:listarParticipantesPorEventoResponse" />
+    </operation>
+    <operation name="registrarParticipacionEvento">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/registrarParticipacionEventoRequest" message="tns:registrarParticipacionEvento" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/registrarParticipacionEventoResponse" message="tns:registrarParticipacionEventoResponse" />
+    </operation>
+    <operation name="buscarEventoPorId">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/buscarEventoPorIdRequest" message="tns:buscarEventoPorId" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/buscarEventoPorIdResponse" message="tns:buscarEventoPorIdResponse" />
+    </operation>
+    <operation name="crearEvento">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/crearEventoRequest" message="tns:crearEvento" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/crearEventoResponse" message="tns:crearEventoResponse" />
+    </operation>
+    <operation name="unirseAEvento">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/unirseAEventoRequest" message="tns:unirseAEvento" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/unirseAEventoResponse" message="tns:unirseAEventoResponse" />
+    </operation>
+    <operation name="listarEventos">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/listarEventosRequest" message="tns:listarEventos" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/EventoWS/listarEventosResponse" message="tns:listarEventosResponse" />
+    </operation>
+  </portType>
+  <binding name="EventoWSPortBinding" type="tns:EventoWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarEventosPorInteres">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarInteresesPorEvento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="cancelarParticipacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="verificarParticipacionEvento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="cancelarParticipacionEvento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarParticipantesPorEvento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="registrarParticipacionEvento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarEventoPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="crearEvento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="unirseAEvento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarEventos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="EventoWS">
+    <port name="EventoWSPort" binding="tns:EventoWSPortBinding">
+      <soap:address location="http://localhost:8080/PucpConnectWS/EventoWS" />
+    </port>
+  </service>
+</definitions>

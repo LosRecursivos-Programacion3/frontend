@@ -59,6 +59,8 @@ C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectPresentacion\o
 C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectPresentacion\bin\PucpConnectPresentacion.dll.config
 C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectPresentacion\bin\PucpConnectDomain.dll
 C:\Users\Fernando\Source\Repos\PucpConnectPresentacion\PucpConnectPresentacion\bin\PucpConnectDomain.pdb
+C:\Users\Fernando\Source\Repos\frontend\PucpConnectPresentacion\obj\Debug\PucpConnectPresentacion.csproj.AssemblyReference.cache
+C:\Users\Fernando\Source\Repos\frontend\PucpConnectPresentacion\obj\Debug\PucpConnectPresentacion.csproj.CoreCompileInputs.cache
 C:\Users\Fernando\Source\Repos\frontend\PucpConnectPresentacion\bin\PucpConnectPresentacion.dll.config
 C:\Users\Fernando\Source\Repos\frontend\PucpConnectPresentacion\bin\PucpConnectPresentacion.dll
 C:\Users\Fernando\Source\Repos\frontend\PucpConnectPresentacion\bin\PucpConnectPresentacion.pdb
@@ -115,8 +117,6 @@ C:\Users\Fernando\Source\Repos\frontend\PucpConnectPresentacion\bin\Microsoft.Co
 C:\Users\Fernando\Source\Repos\frontend\PucpConnectPresentacion\bin\PucpConnectDomain.dll
 C:\Users\Fernando\Source\Repos\frontend\PucpConnectPresentacion\bin\PucpConnectDomain.pdb
 C:\Users\Fernando\Source\Repos\frontend\PucpConnectPresentacion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Fernando\Source\Repos\frontend\PucpConnectPresentacion\obj\Debug\PucpConnectPresentacion.csproj.AssemblyReference.cache
-C:\Users\Fernando\Source\Repos\frontend\PucpConnectPresentacion\obj\Debug\PucpConnectPresentacion.csproj.CoreCompileInputs.cache
 C:\Users\Fernando\Source\Repos\frontend\PucpConnectPresentacion\obj\Debug\PucpConn.78892CE3.Up2Date
 C:\Users\Fernando\Source\Repos\frontend\PucpConnectPresentacion\obj\Debug\PucpConnectPresentacion.dll
 C:\Users\Fernando\Source\Repos\frontend\PucpConnectPresentacion\obj\Debug\PucpConnectPresentacion.pdb

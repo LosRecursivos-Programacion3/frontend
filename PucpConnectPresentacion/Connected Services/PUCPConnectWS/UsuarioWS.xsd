@@ -18,8 +18,10 @@
   <xs:element name="enviarSolicitudAmistadResponse" type="tns:enviarSolicitudAmistadResponse" />
   <xs:element name="hacerMatch" type="tns:hacerMatch" />
   <xs:element name="hacerMatchResponse" type="tns:hacerMatchResponse" />
+  <xs:element name="listarAmigos" type="tns:listarAmigos" />
   <xs:element name="listarAmigosPorId" type="tns:listarAmigosPorId" />
   <xs:element name="listarAmigosPorIdResponse" type="tns:listarAmigosPorIdResponse" />
+  <xs:element name="listarAmigosResponse" type="tns:listarAmigosResponse" />
   <xs:element name="listarIntereses" type="tns:listarIntereses" />
   <xs:element name="listarInteresesResponse" type="tns:listarInteresesResponse" />
   <xs:element name="listarMatches" type="tns:listarMatches" />
@@ -44,6 +46,17 @@
   <xs:element name="registrarAlumnoResponse" type="tns:registrarAlumnoResponse" />
   <xs:element name="registrarInteresesUsuario" type="tns:registrarInteresesUsuario" />
   <xs:element name="registrarInteresesUsuarioResponse" type="tns:registrarInteresesUsuarioResponse" />
+  <xs:complexType name="bloquearUsuario">
+    <xs:sequence>
+      <xs:element name="idBloqueador" type="xs:int" />
+      <xs:element name="idBloqueado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bloquearUsuarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="listarSolicitudesRecibidas">
     <xs:sequence>
       <xs:element name="idAlumno" type="xs:int" />
@@ -65,17 +78,6 @@
       <xs:element name="idAmistad" type="xs:int" />
       <xs:element minOccurs="0" name="nombreAlumnoDos" type="xs:string" />
       <xs:element minOccurs="0" name="nombreAlumnoUno" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="bloquearUsuario">
-    <xs:sequence>
-      <xs:element name="idBloqueador" type="xs:int" />
-      <xs:element name="idBloqueado" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="bloquearUsuarioResponse">
-    <xs:sequence>
-      <xs:element name="return" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="cambiarVisibilidad">
@@ -115,12 +117,12 @@
       <xs:element name="return" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarSugeridos">
+  <xs:complexType name="listarAmigos">
     <xs:sequence>
-      <xs:element name="idAlumno" type="xs:int" />
+      <xs:element name="usuarioId" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarSugeridosResponse">
+  <xs:complexType name="listarAmigosResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:alumno" />
     </xs:sequence>
@@ -153,6 +155,16 @@
   </xs:complexType>
   <xs:complexType name="localDateTime" final="extension restriction">
     <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarSugeridos">
+    <xs:sequence>
+      <xs:element name="idAlumno" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarSugeridosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:alumno" />
+    </xs:sequence>
   </xs:complexType>
   <xs:complexType name="autenticarUsuario">
     <xs:sequence>
@@ -259,6 +271,14 @@
   <xs:complexType name="cancelarSolicitudResponse">
     <xs:sequence />
   </xs:complexType>
+  <xs:complexType name="aceptarSolicitud">
+    <xs:sequence>
+      <xs:element name="idAmistad" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="aceptarSolicitudResponse">
+    <xs:sequence />
+  </xs:complexType>
   <xs:complexType name="registrarInteresesUsuario">
     <xs:sequence>
       <xs:element name="idAlumno" type="xs:int" />
@@ -269,14 +289,6 @@
     <xs:sequence>
       <xs:element name="return" type="xs:boolean" />
     </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="aceptarSolicitud">
-    <xs:sequence>
-      <xs:element name="idAmistad" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="aceptarSolicitudResponse">
-    <xs:sequence />
   </xs:complexType>
   <xs:complexType name="enviarSolicitudAmistad">
     <xs:sequence>
@@ -330,6 +342,14 @@
       <xs:element minOccurs="0" name="nombreAutor" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="rechazarSolicitud">
+    <xs:sequence>
+      <xs:element name="idAmistad" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rechazarSolicitudResponse">
+    <xs:sequence />
+  </xs:complexType>
   <xs:complexType name="listarMatches">
     <xs:sequence>
       <xs:element name="idUsuario" type="xs:int" />
@@ -339,13 +359,5 @@
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:usuario" />
     </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="rechazarSolicitud">
-    <xs:sequence>
-      <xs:element name="idAmistad" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="rechazarSolicitudResponse">
-    <xs:sequence />
   </xs:complexType>
 </xs:schema>

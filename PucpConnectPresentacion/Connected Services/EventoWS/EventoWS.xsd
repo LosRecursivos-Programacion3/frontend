@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ws.pucpconnect.pe.edu.pucp/" targetNamespace="http://ws.pucpconnect.pe.edu.pucp/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="buscarEventoPorId" type="tns:buscarEventoPorId" />
+  <xs:element name="buscarEventoPorIdResponse" type="tns:buscarEventoPorIdResponse" />
+  <xs:element name="cancelarParticipacion" type="tns:cancelarParticipacion" />
+  <xs:element name="cancelarParticipacionEvento" type="tns:cancelarParticipacionEvento" />
+  <xs:element name="cancelarParticipacionEventoResponse" type="tns:cancelarParticipacionEventoResponse" />
+  <xs:element name="cancelarParticipacionResponse" type="tns:cancelarParticipacionResponse" />
+  <xs:element name="crearEvento" type="tns:crearEvento" />
+  <xs:element name="crearEventoResponse" type="tns:crearEventoResponse" />
+  <xs:element name="listarEventos" type="tns:listarEventos" />
+  <xs:element name="listarEventosPorInteres" type="tns:listarEventosPorInteres" />
+  <xs:element name="listarEventosPorInteresResponse" type="tns:listarEventosPorInteresResponse" />
+  <xs:element name="listarEventosResponse" type="tns:listarEventosResponse" />
+  <xs:element name="listarInteresesPorEvento" type="tns:listarInteresesPorEvento" />
+  <xs:element name="listarInteresesPorEventoResponse" type="tns:listarInteresesPorEventoResponse" />
+  <xs:element name="listarParticipantesPorEvento" type="tns:listarParticipantesPorEvento" />
+  <xs:element name="listarParticipantesPorEventoResponse" type="tns:listarParticipantesPorEventoResponse" />
+  <xs:element name="registrarParticipacionEvento" type="tns:registrarParticipacionEvento" />
+  <xs:element name="registrarParticipacionEventoResponse" type="tns:registrarParticipacionEventoResponse" />
+  <xs:element name="unirseAEvento" type="tns:unirseAEvento" />
+  <xs:element name="unirseAEventoResponse" type="tns:unirseAEventoResponse" />
+  <xs:element name="verificarParticipacionEvento" type="tns:verificarParticipacionEvento" />
+  <xs:element name="verificarParticipacionEventoResponse" type="tns:verificarParticipacionEventoResponse" />
+  <xs:complexType name="verificarParticipacionEvento">
+    <xs:sequence>
+      <xs:element name="idEvento" type="xs:int" />
+      <xs:element name="idUsuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="verificarParticipacionEventoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cancelarParticipacionEvento">
+    <xs:sequence>
+      <xs:element name="idEvento" type="xs:int" />
+      <xs:element name="idUsuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cancelarParticipacionEventoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarParticipantesPorEvento">
+    <xs:sequence>
+      <xs:element name="idEvento" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarParticipantesPorEventoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:alumno" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="alumno">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:usuario">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="biografia" type="xs:string" />
+          <xs:element minOccurs="0" name="carrera" type="xs:string" />
+          <xs:element name="edad" type="xs:int" />
+          <xs:element minOccurs="0" name="fotoPerfil" type="xs:string" />
+          <xs:element name="idAlumno" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="idsAlumnosBloqueados" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="ubicacion" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="usuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element name="estado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="fechaRegistro" type="tns:localDateTime" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element name="visible" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="localDateTime" final="extension restriction">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarEventosPorInteres">
+    <xs:sequence>
+      <xs:element name="idEvento" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarEventosPorInteresResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:evento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="evento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="creador" type="tns:alumno" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element name="estado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="fecha" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaFin" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaFinString" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaString" type="xs:string" />
+      <xs:element name="idEvento" type="xs:int" />
+      <xs:element minOccurs="0" name="imagen" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="intereses" nillable="true" type="tns:interes" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="participantes" nillable="true" type="tns:alumno" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="reacciones" nillable="true" type="tns:reaccion" />
+      <xs:element minOccurs="0" name="ubicacion" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="interes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reaccion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="comentario" type="tns:comentario" />
+      <xs:element minOccurs="0" name="evento" type="tns:evento" />
+      <xs:element minOccurs="0" name="fecha" type="tns:localDateTime" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="post" type="tns:post" />
+      <xs:element minOccurs="0" name="tipo" type="tns:reaccionTipo" />
+      <xs:element minOccurs="0" name="usuario" type="tns:alumno" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="comentario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="autor" type="tns:alumno" />
+      <xs:element minOccurs="0" name="contenido" type="xs:string" />
+      <xs:element name="estado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="fechaComentario" type="tns:localDateTime" />
+      <xs:element name="idComentario" type="xs:int" />
+      <xs:element minOccurs="0" name="post" type="tns:post" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="post">
+    <xs:sequence>
+      <xs:element name="autor" type="xs:int" />
+      <xs:element minOccurs="0" name="contenido" type="xs:string" />
+      <xs:element name="estado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="fecha" type="tns:localDateTime" />
+      <xs:element name="idPost" type="xs:int" />
+      <xs:element minOccurs="0" name="imagen" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="crearEvento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaFin" type="xs:string" />
+      <xs:element minOccurs="0" name="ubicacion" type="xs:string" />
+      <xs:element name="creadorId" type="xs:int" />
+      <xs:element minOccurs="0" name="interesesIds" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="crearEventoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarEventos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarEventosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:evento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cancelarParticipacion">
+    <xs:sequence>
+      <xs:element name="idEvento" type="xs:int" />
+      <xs:element name="idAlumno" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cancelarParticipacionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="registrarParticipacionEvento">
+    <xs:sequence>
+      <xs:element name="idEvento" type="xs:int" />
+      <xs:element name="idAlumno" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="registrarParticipacionEventoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unirseAEvento">
+    <xs:sequence>
+      <xs:element name="idEvento" type="xs:int" />
+      <xs:element name="idAlumno" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unirseAEventoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarInteresesPorEvento">
+    <xs:sequence>
+      <xs:element name="idEvento" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarInteresesPorEventoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:interes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarEventoPorId">
+    <xs:sequence>
+      <xs:element name="idEvento" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarEventoPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:evento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="reaccionTipo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="LIKE" />
+      <xs:enumeration value="DISLIKE" />
+      <xs:enumeration value="LOVE" />
+      <xs:enumeration value="JAJA" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
