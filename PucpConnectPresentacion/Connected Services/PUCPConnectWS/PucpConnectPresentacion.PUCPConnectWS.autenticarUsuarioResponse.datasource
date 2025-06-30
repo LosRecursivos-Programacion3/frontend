@@ -6,5 +6,5 @@
     cause the file to be unrecognizable by the program.
 -->
 <GenericObjectDataSource DisplayName="autenticarUsuarioResponse" Version="1.0" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-   <TypeInfo>PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioResponse, Connected Services.PUCPConnectWS.Reference.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
+   <TypeInfo>PucpConnectPresentacion.PucpConnectWS.autenticarUsuarioResponse, Connected Services.PucpConnectWS.Reference.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
 </GenericObjectDataSource>

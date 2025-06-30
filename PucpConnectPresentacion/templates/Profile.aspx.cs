@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using PucpConnectPresentacion.PUCPConnectWS;
+using PucpConnectPresentacion.PucpConnectWS;
 
 namespace PucpConnectPresentacion
 {
@@ -12,7 +12,7 @@ namespace PucpConnectPresentacion
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var usuarioActual = (usuario)Session["usuarioActual"];
+            var usuarioActual = (alumno)Session["usuarioActual"];
             if (usuarioActual == null)
             {
                 lblNombrePerfil.Text = "NO EN SESIÓN"; // DEBUG: Para saber si no hay sesión
@@ -20,6 +20,8 @@ namespace PucpConnectPresentacion
             }
 
             lblNombrePerfil.Text = usuarioActual.nombre;
+            lblCarrera.Text = usuarioActual.carrera;       
+            lblBiografia.Text = usuarioActual.biografia; 
         }
 
         protected void btnConfigurar_Click(object sender, EventArgs e)
@@ -28,7 +30,7 @@ namespace PucpConnectPresentacion
         }
 
         protected void btnConfigureInterests_Click(object sender, EventArgs e) {
-            Response.Redirect("InteresModify.aspx");
+            Response.Redirect("SelectInterest.aspx");
         }
     }
 }

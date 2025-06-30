@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:tns="http://ws.pucpconnect.pe.edu.pucp/" targetNamespace="http://ws.pucpconnect.pe.edu.pucp/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:tns="http://pucp.edu.pe/pucpconnect" targetNamespace="http://pucp.edu.pe/pucpconnect" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="autenticarUsuario" type="tns:autenticarUsuario" />
   <xs:element name="autenticarUsuarioResponse" type="tns:autenticarUsuarioResponse" />
+  <xs:element name="listarUsuarios" type="tns:listarUsuarios" />
+  <xs:element name="listarUsuariosResponse" type="tns:listarUsuariosResponse" />
   <xs:element name="registrarAlumno" type="tns:registrarAlumno" />
   <xs:element name="registrarAlumnoResponse" type="tns:registrarAlumnoResponse" />
-  <xs:complexType name="autenticarUsuario">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="email" type="xs:string" />
-      <xs:element minOccurs="0" name="password" type="xs:string" />
-    </xs:sequence>
+  <xs:complexType name="listarUsuarios">
+    <xs:sequence />
   </xs:complexType>
-  <xs:complexType name="autenticarUsuarioResponse">
+  <xs:complexType name="listarUsuariosResponse">
     <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="tns:usuario" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:usuario" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="usuario">
@@ -28,6 +27,17 @@
   </xs:complexType>
   <xs:complexType name="localDateTime" final="extension restriction">
     <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="autenticarUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="autenticarUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:usuario" />
+    </xs:sequence>
   </xs:complexType>
   <xs:complexType name="registrarAlumno">
     <xs:sequence>

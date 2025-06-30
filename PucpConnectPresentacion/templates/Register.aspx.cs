@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using PucpConnectDomain;
-using PucpConnectPresentacion.PUCPConnectWS;
+using PucpConnectPresentacion.PucpConnectWS;
 
 
 namespace PucpConnectPresentacion.templates
@@ -15,7 +15,7 @@ namespace PucpConnectPresentacion.templates
         private UsuarioWSClient usuarioWSClient;
         protected void Page_Load(object sender, EventArgs e)
         {
-            usuarioWSClient = new PUCPConnectWS.UsuarioWSClient();
+            usuarioWSClient = new PucpConnectWS.UsuarioWSClient();
         }
 
         protected void BtnRegistrar_Click(object sender, EventArgs e)

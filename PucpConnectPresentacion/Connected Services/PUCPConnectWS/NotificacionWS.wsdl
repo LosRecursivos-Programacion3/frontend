@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://pucp.edu.pe/pucpconnect" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="NotificacionWS" targetNamespace="http://pucp.edu.pe/pucpconnect" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/PucpConnectWS/NotificacionWS?xsd=1" namespace="http://pucp.edu.pe/pucpconnect" />
+    </xsd:schema>
+  </types>
+  <message name="enviarNotificacion">
+    <part name="parameters" element="tns:enviarNotificacion" />
+  </message>
+  <message name="enviarNotificacionResponse">
+    <part name="parameters" element="tns:enviarNotificacionResponse" />
+  </message>
+  <message name="listarNotificacionesPorUsuario">
+    <part name="parameters" element="tns:listarNotificacionesPorUsuario" />
+  </message>
+  <message name="listarNotificacionesPorUsuarioResponse">
+    <part name="parameters" element="tns:listarNotificacionesPorUsuarioResponse" />
+  </message>
+  <message name="marcarNotificacionComoVisto">
+    <part name="parameters" element="tns:marcarNotificacionComoVisto" />
+  </message>
+  <message name="marcarNotificacionComoVistoResponse">
+    <part name="parameters" element="tns:marcarNotificacionComoVistoResponse" />
+  </message>
+  <portType name="NotificacionWS">
+    <operation name="enviarNotificacion">
+      <input wsam:Action="http://pucp.edu.pe/pucpconnect/NotificacionWS/enviarNotificacionRequest" message="tns:enviarNotificacion" />
+      <output wsam:Action="http://pucp.edu.pe/pucpconnect/NotificacionWS/enviarNotificacionResponse" message="tns:enviarNotificacionResponse" />
+    </operation>
+    <operation name="listarNotificacionesPorUsuario">
+      <input wsam:Action="http://pucp.edu.pe/pucpconnect/NotificacionWS/listarNotificacionesPorUsuarioRequest" message="tns:listarNotificacionesPorUsuario" />
+      <output wsam:Action="http://pucp.edu.pe/pucpconnect/NotificacionWS/listarNotificacionesPorUsuarioResponse" message="tns:listarNotificacionesPorUsuarioResponse" />
+    </operation>
+    <operation name="marcarNotificacionComoVisto">
+      <input wsam:Action="http://pucp.edu.pe/pucpconnect/NotificacionWS/marcarNotificacionComoVistoRequest" message="tns:marcarNotificacionComoVisto" />
+      <output wsam:Action="http://pucp.edu.pe/pucpconnect/NotificacionWS/marcarNotificacionComoVistoResponse" message="tns:marcarNotificacionComoVistoResponse" />
+    </operation>
+  </portType>
+  <binding name="NotificacionWSPortBinding" type="tns:NotificacionWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="enviarNotificacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarNotificacionesPorUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="marcarNotificacionComoVisto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="NotificacionWS">
+    <port name="NotificacionWSPort" binding="tns:NotificacionWSPortBinding">
+      <soap:address location="http://localhost:8080/PucpConnectWS/NotificacionWS" />
+    </port>
+  </service>
+</definitions>
