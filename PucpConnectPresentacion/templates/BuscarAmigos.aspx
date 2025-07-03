@@ -11,7 +11,7 @@
     <div class="container my-4">
         <div class="d-flex justify-content-between mb-3">
             <h2>Buscar amigos</h2>
-            <button class="btn btn-match fw-bold px-4">Match</button>
+            <button type="button" class="btn btn-match fw-bold px-4" onclick="location.href='ModoMatch.aspx'">Match</button>
         </div>
 
         <div class="row g-4">
@@ -70,6 +70,10 @@
             });
 
             return false; // Siempre detener el postback hasta confirmar
+        }
+        function redirigirModoMatch() {
+            // Aquí podrías validar algo si quieres antes de redirigir
+            window.location.href = 'ModoMatch.aspx';
         }
     </script>
 </asp:Content>

@@ -46,25 +46,24 @@ namespace PucpConnectPresentacion
             var publicaciones = usuarioWSClient.listarPostPorId(idAlumno);
             var usuarioActual = (alumno)Session["usuarioActual"];
             // Convertir a un DTO visual si es necesario
-            var publicacionesVisual = publicaciones.Select(p => new
+            if (publicaciones != null && publicaciones.Any())
             {
-                Contenido = p.contenido,
-                ImagenPost = string.IsNullOrEmpty(p.imagen) ? null : $"../Images/{p.imagen}",
-                NombreAutor = usuarioActual.nombre,
-                RutaImagenAutor = $"../Images/{usuarioActual.fotoPerfil ?? "default.jpg"}",
-                CarreraYFecha = $"{usuarioActual.carrera} · {p.fecha}"
-            }).ToList();
+                var publicacionesVisual = publicaciones.Select(p => new
+                {
+                    Contenido = p.contenido,
+                    ImagenPost = string.IsNullOrEmpty(p.imagen) ? null : $"../Images/{p.imagen}",
+                    RutaImagenAutor = $"../Images/{usuarioActual.fotoPerfil}",
+                    NombreAutor = usuarioActual.nombre,
+                    CarreraYFecha = $"{usuarioActual.carrera} · {p.fecha}"
+                }).ToList();
 
-            if (publicacionesVisual.Count() == 0)
-            {
-                lblSinPublicaciones.Visible = true;
+                // Mostrar publicaciones en pantalla
             }
             else
             {
-                lblSinPublicaciones.Visible = false;
-                rptPublicaciones.DataSource = publicacionesVisual;
-                rptPublicaciones.DataBind();
+                lblSinPublicaciones.Visible = true;
             }
+
         }
 
         protected void btnConfigurar_Click(object sender, EventArgs e)

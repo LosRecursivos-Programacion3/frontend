@@ -5,41 +5,65 @@
       <xsd:import schemaLocation="http://localhost:8080/PucpConnectWS/UsuarioWS?xsd=1" namespace="http://ws.pucpconnect.pe.edu.pucp/" />
     </xsd:schema>
   </types>
+  <message name="hacerMatch">
+    <part name="parameters" element="tns:hacerMatch" />
+  </message>
+  <message name="hacerMatchResponse">
+    <part name="parameters" element="tns:hacerMatchResponse" />
+  </message>
+  <message name="crearPost">
+    <part name="parameters" element="tns:crearPost" />
+  </message>
+  <message name="crearPostResponse">
+    <part name="parameters" element="tns:crearPostResponse" />
+  </message>
+  <message name="registrarInteresesUsuario">
+    <part name="parameters" element="tns:registrarInteresesUsuario" />
+  </message>
+  <message name="registrarInteresesUsuarioResponse">
+    <part name="parameters" element="tns:registrarInteresesUsuarioResponse" />
+  </message>
+  <message name="listarSolicitudesEnviadas">
+    <part name="parameters" element="tns:listarSolicitudesEnviadas" />
+  </message>
+  <message name="listarSolicitudesEnviadasResponse">
+    <part name="parameters" element="tns:listarSolicitudesEnviadasResponse" />
+  </message>
+  <message name="listarSugeridos_Para_Match">
+    <part name="parameters" element="tns:listarSugeridos_Para_Match" />
+  </message>
+  <message name="listarSugeridos_Para_MatchResponse">
+    <part name="parameters" element="tns:listarSugeridos_Para_MatchResponse" />
+  </message>
+  <message name="enviarSolicitudAmistad">
+    <part name="parameters" element="tns:enviarSolicitudAmistad" />
+  </message>
+  <message name="enviarSolicitudAmistadResponse">
+    <part name="parameters" element="tns:enviarSolicitudAmistadResponse" />
+  </message>
+  <message name="obtenerInteresesUsuario">
+    <part name="parameters" element="tns:obtenerInteresesUsuario" />
+  </message>
+  <message name="obtenerInteresesUsuarioResponse">
+    <part name="parameters" element="tns:obtenerInteresesUsuarioResponse" />
+  </message>
+  <message name="listarSolicitudesRecibidas">
+    <part name="parameters" element="tns:listarSolicitudesRecibidas" />
+  </message>
+  <message name="listarSolicitudesRecibidasResponse">
+    <part name="parameters" element="tns:listarSolicitudesRecibidasResponse" />
+  </message>
   <message name="listarSugerencias">
     <part name="parameters" element="tns:listarSugerencias" />
   </message>
   <message name="listarSugerenciasResponse">
     <part name="parameters" element="tns:listarSugerenciasResponse" />
   </message>
-  <message name="aceptarSolicitud">
-    <part name="parameters" element="tns:aceptarSolicitud" />
+  <message name="listarSugeridos">
+    <part name="parameters" element="tns:listarSugeridos" />
   </message>
-  <message name="aceptarSolicitudResponse">
-    <part name="parameters" element="tns:aceptarSolicitudResponse" />
-  </message>
-  <message name="rechazarSolicitud">
-    <part name="parameters" element="tns:rechazarSolicitud" />
-  </message>
-  <message name="rechazarSolicitudResponse">
-    <part name="parameters" element="tns:rechazarSolicitudResponse" />
-  </message>
-  <message name="listarAmigos">
-    <part name="parameters" element="tns:listarAmigos" />
-  </message>
-  <message name="listarAmigosResponse">
-    <part name="parameters" element="tns:listarAmigosResponse" />
-  </message>
-  <message name="listarMatches">
-    <part name="parameters" element="tns:listarMatches" />
-  </message>
-  <message name="listarMatchesResponse">
-    <part name="parameters" element="tns:listarMatchesResponse" />
-  </message>
-  <message name="listarPostPorId">
-    <part name="parameters" element="tns:listarPostPorId" />
-  </message>
-  <message name="listarPostPorIdResponse">
-    <part name="parameters" element="tns:listarPostPorIdResponse" />
+  <message name="listarSugeridosResponse">
+    <part name="parameters" element="tns:listarSugeridosResponse" />
   </message>
   <message name="listarIntereses">
     <part name="parameters" element="tns:listarIntereses" />
@@ -53,23 +77,17 @@
   <message name="cancelarSolicitudResponse">
     <part name="parameters" element="tns:cancelarSolicitudResponse" />
   </message>
-  <message name="listarSugeridos">
-    <part name="parameters" element="tns:listarSugeridos" />
+  <message name="existeInteraccion">
+    <part name="parameters" element="tns:existeInteraccion" />
   </message>
-  <message name="listarSugeridosResponse">
-    <part name="parameters" element="tns:listarSugeridosResponse" />
+  <message name="existeInteraccionResponse">
+    <part name="parameters" element="tns:existeInteraccionResponse" />
   </message>
-  <message name="autenticarUsuario">
-    <part name="parameters" element="tns:autenticarUsuario" />
+  <message name="confirmarMatch">
+    <part name="parameters" element="tns:confirmarMatch" />
   </message>
-  <message name="autenticarUsuarioResponse">
-    <part name="parameters" element="tns:autenticarUsuarioResponse" />
-  </message>
-  <message name="listarAmigosPorId">
-    <part name="parameters" element="tns:listarAmigosPorId" />
-  </message>
-  <message name="listarAmigosPorIdResponse">
-    <part name="parameters" element="tns:listarAmigosPorIdResponse" />
+  <message name="confirmarMatchResponse">
+    <part name="parameters" element="tns:confirmarMatchResponse" />
   </message>
   <message name="cambiarVisibilidad">
     <part name="parameters" element="tns:cambiarVisibilidad" />
@@ -77,11 +95,47 @@
   <message name="cambiarVisibilidadResponse">
     <part name="parameters" element="tns:cambiarVisibilidadResponse" />
   </message>
+  <message name="autenticarUsuario">
+    <part name="parameters" element="tns:autenticarUsuario" />
+  </message>
+  <message name="autenticarUsuarioResponse">
+    <part name="parameters" element="tns:autenticarUsuarioResponse" />
+  </message>
+  <message name="rechazarSolicitud">
+    <part name="parameters" element="tns:rechazarSolicitud" />
+  </message>
+  <message name="rechazarSolicitudResponse">
+    <part name="parameters" element="tns:rechazarSolicitudResponse" />
+  </message>
+  <message name="crearInteraccion">
+    <part name="parameters" element="tns:crearInteraccion" />
+  </message>
+  <message name="crearInteraccionResponse">
+    <part name="parameters" element="tns:crearInteraccionResponse" />
+  </message>
+  <message name="agregarAmistad">
+    <part name="parameters" element="tns:agregarAmistad" />
+  </message>
+  <message name="agregarAmistadResponse">
+    <part name="parameters" element="tns:agregarAmistadResponse" />
+  </message>
+  <message name="listarPostPorId">
+    <part name="parameters" element="tns:listarPostPorId" />
+  </message>
+  <message name="listarPostPorIdResponse">
+    <part name="parameters" element="tns:listarPostPorIdResponse" />
+  </message>
   <message name="listarPostParaMain">
     <part name="parameters" element="tns:listarPostParaMain" />
   </message>
   <message name="listarPostParaMainResponse">
     <part name="parameters" element="tns:listarPostParaMainResponse" />
+  </message>
+  <message name="aceptarSolicitud">
+    <part name="parameters" element="tns:aceptarSolicitud" />
+  </message>
+  <message name="aceptarSolicitudResponse">
+    <part name="parameters" element="tns:aceptarSolicitudResponse" />
   </message>
   <message name="actualizarAlumno">
     <part name="parameters" element="tns:actualizarAlumno" />
@@ -89,84 +143,76 @@
   <message name="actualizarAlumnoResponse">
     <part name="parameters" element="tns:actualizarAlumnoResponse" />
   </message>
-  <message name="bloquearUsuario">
-    <part name="parameters" element="tns:bloquearUsuario" />
-  </message>
-  <message name="bloquearUsuarioResponse">
-    <part name="parameters" element="tns:bloquearUsuarioResponse" />
-  </message>
   <message name="registrarAlumno">
     <part name="parameters" element="tns:registrarAlumno" />
   </message>
   <message name="registrarAlumnoResponse">
     <part name="parameters" element="tns:registrarAlumnoResponse" />
   </message>
-  <message name="hacerMatch">
-    <part name="parameters" element="tns:hacerMatch" />
+  <message name="listarAmigosPorId">
+    <part name="parameters" element="tns:listarAmigosPorId" />
   </message>
-  <message name="hacerMatchResponse">
-    <part name="parameters" element="tns:hacerMatchResponse" />
+  <message name="listarAmigosPorIdResponse">
+    <part name="parameters" element="tns:listarAmigosPorIdResponse" />
   </message>
-  <message name="crearPost">
-    <part name="parameters" element="tns:crearPost" />
+  <message name="bloquearUsuario">
+    <part name="parameters" element="tns:bloquearUsuario" />
   </message>
-  <message name="crearPostResponse">
-    <part name="parameters" element="tns:crearPostResponse" />
+  <message name="bloquearUsuarioResponse">
+    <part name="parameters" element="tns:bloquearUsuarioResponse" />
   </message>
-  <message name="enviarSolicitudAmistad">
-    <part name="parameters" element="tns:enviarSolicitudAmistad" />
+  <message name="listarMatches">
+    <part name="parameters" element="tns:listarMatches" />
   </message>
-  <message name="enviarSolicitudAmistadResponse">
-    <part name="parameters" element="tns:enviarSolicitudAmistadResponse" />
+  <message name="listarMatchesResponse">
+    <part name="parameters" element="tns:listarMatchesResponse" />
   </message>
-  <message name="listarSolicitudesEnviadas">
-    <part name="parameters" element="tns:listarSolicitudesEnviadas" />
+  <message name="listarAmigos">
+    <part name="parameters" element="tns:listarAmigos" />
   </message>
-  <message name="listarSolicitudesEnviadasResponse">
-    <part name="parameters" element="tns:listarSolicitudesEnviadasResponse" />
-  </message>
-  <message name="registrarInteresesUsuario">
-    <part name="parameters" element="tns:registrarInteresesUsuario" />
-  </message>
-  <message name="registrarInteresesUsuarioResponse">
-    <part name="parameters" element="tns:registrarInteresesUsuarioResponse" />
-  </message>
-  <message name="listarSolicitudesRecibidas">
-    <part name="parameters" element="tns:listarSolicitudesRecibidas" />
-  </message>
-  <message name="listarSolicitudesRecibidasResponse">
-    <part name="parameters" element="tns:listarSolicitudesRecibidasResponse" />
-  </message>
-  <message name="obtenerInteresesUsuario">
-    <part name="parameters" element="tns:obtenerInteresesUsuario" />
-  </message>
-  <message name="obtenerInteresesUsuarioResponse">
-    <part name="parameters" element="tns:obtenerInteresesUsuarioResponse" />
+  <message name="listarAmigosResponse">
+    <part name="parameters" element="tns:listarAmigosResponse" />
   </message>
   <portType name="UsuarioWS">
+    <operation name="hacerMatch">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/hacerMatchRequest" message="tns:hacerMatch" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/hacerMatchResponse" message="tns:hacerMatchResponse" />
+    </operation>
+    <operation name="crearPost">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/crearPostRequest" message="tns:crearPost" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/crearPostResponse" message="tns:crearPostResponse" />
+    </operation>
+    <operation name="registrarInteresesUsuario">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarInteresesUsuarioRequest" message="tns:registrarInteresesUsuario" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarInteresesUsuarioResponse" message="tns:registrarInteresesUsuarioResponse" />
+    </operation>
+    <operation name="listarSolicitudesEnviadas">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarSolicitudesEnviadasRequest" message="tns:listarSolicitudesEnviadas" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarSolicitudesEnviadasResponse" message="tns:listarSolicitudesEnviadasResponse" />
+    </operation>
+    <operation name="listarSugeridos_Para_Match">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarSugeridos_Para_MatchRequest" message="tns:listarSugeridos_Para_Match" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarSugeridos_Para_MatchResponse" message="tns:listarSugeridos_Para_MatchResponse" />
+    </operation>
+    <operation name="enviarSolicitudAmistad">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/enviarSolicitudAmistadRequest" message="tns:enviarSolicitudAmistad" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/enviarSolicitudAmistadResponse" message="tns:enviarSolicitudAmistadResponse" />
+    </operation>
+    <operation name="obtenerInteresesUsuario">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/obtenerInteresesUsuarioRequest" message="tns:obtenerInteresesUsuario" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/obtenerInteresesUsuarioResponse" message="tns:obtenerInteresesUsuarioResponse" />
+    </operation>
+    <operation name="listarSolicitudesRecibidas">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarSolicitudesRecibidasRequest" message="tns:listarSolicitudesRecibidas" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarSolicitudesRecibidasResponse" message="tns:listarSolicitudesRecibidasResponse" />
+    </operation>
     <operation name="listarSugerencias">
       <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarSugerenciasRequest" message="tns:listarSugerencias" />
       <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarSugerenciasResponse" message="tns:listarSugerenciasResponse" />
     </operation>
-    <operation name="aceptarSolicitud">
-      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/aceptarSolicitudRequest" message="tns:aceptarSolicitud" />
-      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/aceptarSolicitudResponse" message="tns:aceptarSolicitudResponse" />
-    </operation>
-    <operation name="rechazarSolicitud">
-      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/rechazarSolicitudRequest" message="tns:rechazarSolicitud" />
-      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/rechazarSolicitudResponse" message="tns:rechazarSolicitudResponse" />
-    </operation>
-    <operation name="listarAmigos">
-      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarAmigosRequest" message="tns:listarAmigos" />
-      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarAmigosResponse" message="tns:listarAmigosResponse" />
-    </operation>
-    <operation name="listarMatches">
-      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarMatchesRequest" message="tns:listarMatches" />
-      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarMatchesResponse" message="tns:listarMatchesResponse" />
-    </operation>
-    <operation name="listarPostPorId">
-      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarPostPorIdRequest" message="tns:listarPostPorId" />
-      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarPostPorIdResponse" message="tns:listarPostPorIdResponse" />
+    <operation name="listarSugeridos">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarSugeridosRequest" message="tns:listarSugeridos" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarSugeridosResponse" message="tns:listarSugeridosResponse" />
     </operation>
     <operation name="listarIntereses">
       <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarInteresesRequest" message="tns:listarIntereses" />
@@ -176,69 +222,145 @@
       <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/cancelarSolicitudRequest" message="tns:cancelarSolicitud" />
       <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/cancelarSolicitudResponse" message="tns:cancelarSolicitudResponse" />
     </operation>
-    <operation name="listarSugeridos">
-      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarSugeridosRequest" message="tns:listarSugeridos" />
-      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarSugeridosResponse" message="tns:listarSugeridosResponse" />
+    <operation name="existeInteraccion">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/existeInteraccionRequest" message="tns:existeInteraccion" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/existeInteraccionResponse" message="tns:existeInteraccionResponse" />
     </operation>
-    <operation name="autenticarUsuario">
-      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/autenticarUsuarioRequest" message="tns:autenticarUsuario" />
-      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/autenticarUsuarioResponse" message="tns:autenticarUsuarioResponse" />
-    </operation>
-    <operation name="listarAmigosPorId">
-      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarAmigosPorIdRequest" message="tns:listarAmigosPorId" />
-      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarAmigosPorIdResponse" message="tns:listarAmigosPorIdResponse" />
+    <operation name="confirmarMatch">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/confirmarMatchRequest" message="tns:confirmarMatch" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/confirmarMatchResponse" message="tns:confirmarMatchResponse" />
     </operation>
     <operation name="cambiarVisibilidad">
       <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/cambiarVisibilidadRequest" message="tns:cambiarVisibilidad" />
       <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/cambiarVisibilidadResponse" message="tns:cambiarVisibilidadResponse" />
     </operation>
+    <operation name="autenticarUsuario">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/autenticarUsuarioRequest" message="tns:autenticarUsuario" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/autenticarUsuarioResponse" message="tns:autenticarUsuarioResponse" />
+    </operation>
+    <operation name="rechazarSolicitud">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/rechazarSolicitudRequest" message="tns:rechazarSolicitud" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/rechazarSolicitudResponse" message="tns:rechazarSolicitudResponse" />
+    </operation>
+    <operation name="crearInteraccion">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/crearInteraccionRequest" message="tns:crearInteraccion" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/crearInteraccionResponse" message="tns:crearInteraccionResponse" />
+    </operation>
+    <operation name="agregarAmistad">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/agregarAmistadRequest" message="tns:agregarAmistad" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/agregarAmistadResponse" message="tns:agregarAmistadResponse" />
+    </operation>
+    <operation name="listarPostPorId">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarPostPorIdRequest" message="tns:listarPostPorId" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarPostPorIdResponse" message="tns:listarPostPorIdResponse" />
+    </operation>
     <operation name="listarPostParaMain">
       <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarPostParaMainRequest" message="tns:listarPostParaMain" />
       <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarPostParaMainResponse" message="tns:listarPostParaMainResponse" />
+    </operation>
+    <operation name="aceptarSolicitud">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/aceptarSolicitudRequest" message="tns:aceptarSolicitud" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/aceptarSolicitudResponse" message="tns:aceptarSolicitudResponse" />
     </operation>
     <operation name="actualizarAlumno">
       <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/actualizarAlumnoRequest" message="tns:actualizarAlumno" />
       <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/actualizarAlumnoResponse" message="tns:actualizarAlumnoResponse" />
     </operation>
-    <operation name="bloquearUsuario">
-      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/bloquearUsuarioRequest" message="tns:bloquearUsuario" />
-      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/bloquearUsuarioResponse" message="tns:bloquearUsuarioResponse" />
-    </operation>
     <operation name="registrarAlumno">
       <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarAlumnoRequest" message="tns:registrarAlumno" />
       <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarAlumnoResponse" message="tns:registrarAlumnoResponse" />
     </operation>
-    <operation name="hacerMatch">
-      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/hacerMatchRequest" message="tns:hacerMatch" />
-      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/hacerMatchResponse" message="tns:hacerMatchResponse" />
+    <operation name="listarAmigosPorId">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarAmigosPorIdRequest" message="tns:listarAmigosPorId" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarAmigosPorIdResponse" message="tns:listarAmigosPorIdResponse" />
     </operation>
-    <operation name="crearPost">
-      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/crearPostRequest" message="tns:crearPost" />
-      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/crearPostResponse" message="tns:crearPostResponse" />
+    <operation name="bloquearUsuario">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/bloquearUsuarioRequest" message="tns:bloquearUsuario" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/bloquearUsuarioResponse" message="tns:bloquearUsuarioResponse" />
     </operation>
-    <operation name="enviarSolicitudAmistad">
-      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/enviarSolicitudAmistadRequest" message="tns:enviarSolicitudAmistad" />
-      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/enviarSolicitudAmistadResponse" message="tns:enviarSolicitudAmistadResponse" />
+    <operation name="listarMatches">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarMatchesRequest" message="tns:listarMatches" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarMatchesResponse" message="tns:listarMatchesResponse" />
     </operation>
-    <operation name="listarSolicitudesEnviadas">
-      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarSolicitudesEnviadasRequest" message="tns:listarSolicitudesEnviadas" />
-      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarSolicitudesEnviadasResponse" message="tns:listarSolicitudesEnviadasResponse" />
-    </operation>
-    <operation name="registrarInteresesUsuario">
-      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarInteresesUsuarioRequest" message="tns:registrarInteresesUsuario" />
-      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/registrarInteresesUsuarioResponse" message="tns:registrarInteresesUsuarioResponse" />
-    </operation>
-    <operation name="listarSolicitudesRecibidas">
-      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarSolicitudesRecibidasRequest" message="tns:listarSolicitudesRecibidas" />
-      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarSolicitudesRecibidasResponse" message="tns:listarSolicitudesRecibidasResponse" />
-    </operation>
-    <operation name="obtenerInteresesUsuario">
-      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/obtenerInteresesUsuarioRequest" message="tns:obtenerInteresesUsuario" />
-      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/obtenerInteresesUsuarioResponse" message="tns:obtenerInteresesUsuarioResponse" />
+    <operation name="listarAmigos">
+      <input wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarAmigosRequest" message="tns:listarAmigos" />
+      <output wsam:Action="http://ws.pucpconnect.pe.edu.pucp/UsuarioWS/listarAmigosResponse" message="tns:listarAmigosResponse" />
     </operation>
   </portType>
   <binding name="UsuarioWSPortBinding" type="tns:UsuarioWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="hacerMatch">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="crearPost">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="registrarInteresesUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarSolicitudesEnviadas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarSugeridos_Para_Match">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="enviarSolicitudAmistad">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerInteresesUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarSolicitudesRecibidas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="listarSugerencias">
       <soap:operation soapAction="" />
       <input>
@@ -248,43 +370,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="aceptarSolicitud">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="rechazarSolicitud">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarAmigos">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarMatches">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarPostPorId">
+    <operation name="listarSugeridos">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -311,7 +397,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarSugeridos">
+    <operation name="existeInteraccion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -320,16 +406,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="autenticarUsuario">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarAmigosPorId">
+    <operation name="confirmarMatch">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -347,7 +424,61 @@
         <soap:body use="literal" />
       </output>
     </operation>
+    <operation name="autenticarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="rechazarSolicitud">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="crearInteraccion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="agregarAmistad">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPostPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="listarPostParaMain">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="aceptarSolicitud">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -365,15 +496,6 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="bloquearUsuario">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="registrarAlumno">
       <soap:operation soapAction="" />
       <input>
@@ -383,7 +505,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="hacerMatch">
+    <operation name="listarAmigosPorId">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -392,7 +514,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="crearPost">
+    <operation name="bloquearUsuario">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -401,7 +523,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="enviarSolicitudAmistad">
+    <operation name="listarMatches">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -410,34 +532,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarSolicitudesEnviadas">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="registrarInteresesUsuario">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarSolicitudesRecibidas">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="obtenerInteresesUsuario">
+    <operation name="listarAmigos">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

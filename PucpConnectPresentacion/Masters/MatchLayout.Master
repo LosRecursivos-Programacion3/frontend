@@ -14,8 +14,8 @@
     <form id="form1" runat="server">
         <div class="top-bar">
             <img src="../Images/LogoPUCPCONNECT.png" alt="Logo PUCP" height="32" />
-            <span>Heider Sanchez</span>
-            <img src="../Images/profile-0.jpg" class="profile" />
+            <span><asp:Label ID="lblNombreUsuario" runat="server" CssClass="text-white" /></span>
+             <asp:Image ID="imgPerfil" runat="server" CssClass="profile" AlternateText="Foto perfil" />
         </div>
 
         <div class="container my-4">

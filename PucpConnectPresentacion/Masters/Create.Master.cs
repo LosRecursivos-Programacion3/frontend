@@ -14,7 +14,7 @@ namespace PucpConnectPresentacion.Masters
             var usuarioActual = (usuario)Session["usuarioActual"];
             if (usuarioActual == null)
             {
-                Response.Redirect("Login.aspx");
+                Response.Redirect("Login.aspx?returnUrl=" + Server.UrlEncode(Request.RawUrl));
                 return;
             }
 
