@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ws.pucpconnect.pe.edu.pucp/" targetNamespace="http://ws.pucpconnect.pe.edu.pucp/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="cambiarEstado" type="tns:cambiarEstado" />
+  <xs:element name="cambiarEstadoResponse" type="tns:cambiarEstadoResponse" />
+  <xs:element name="marcarComoVisto" type="tns:marcarComoVisto" />
+  <xs:element name="marcarComoVistoResponse" type="tns:marcarComoVistoResponse" />
+  <xs:element name="obtenerNotificaciones" type="tns:obtenerNotificaciones" />
+  <xs:element name="obtenerNotificacionesResponse" type="tns:obtenerNotificacionesResponse" />
+  <xs:complexType name="cambiarEstado">
+    <xs:sequence>
+      <xs:element name="idNotificacion" type="xs:int" />
+      <xs:element name="estado" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cambiarEstadoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="marcarComoVisto">
+    <xs:sequence>
+      <xs:element name="idNotificacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="marcarComoVistoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerNotificaciones">
+    <xs:sequence>
+      <xs:element name="idUsuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerNotificacionesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:notificacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="notificacion">
+    <xs:sequence>
+      <xs:element name="estado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="fecha" type="tns:timestamp" />
+      <xs:element name="idNotificacion" type="xs:int" />
+      <xs:element minOccurs="0" name="mensaje" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo" type="xs:string" />
+      <xs:element name="usuarioId" type="xs:int" />
+      <xs:element name="visto" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="timestamp">
+    <xs:sequence>
+      <xs:element name="nanos" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

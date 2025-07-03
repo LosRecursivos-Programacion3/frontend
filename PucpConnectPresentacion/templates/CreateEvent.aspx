@@ -34,45 +34,65 @@
                 <label>Ubicación</label>
                 <asp:TextBox ID="txtUbicacion" runat="server" CssClass="form-control border-0 border-bottom rounded-0" />
             </div>
-            <div class="mb-3">
-                <label>¿Presencial o Virtual?</label>
-                <asp:DropDownList ID="ddlModalidad" runat="server" CssClass="form-select">
-                    <asp:ListItem Text="Presencial" Value="Presencial" />
-                    <asp:ListItem Text="Virtual" Value="Virtual" />
-                </asp:DropDownList>
-            </div>
-            <div class="mb-3">
-                <label class="d-block">Privacidad</label>
-                <div class="form-check">
-                    <asp:RadioButton ID="rbPrivado" runat="server" GroupName="Privacidad" CssClass="form-check-input" />
-                    <label class="form-check-label">Privado</label>
-                </div>
-                <div class="form-check">
-                    <asp:RadioButton ID="rbPublico" runat="server" GroupName="Privacidad" CssClass="form-check-input" />
-                    <label class="form-check-label">Público</label>
-                </div>
-                <div class="form-check">
-                    <asp:RadioButton ID="rbGrupo" runat="server" GroupName="Privacidad" CssClass="form-check-input" />
-                    <label class="form-check-label">Grupo</label>
-                </div>
-            </div>
         </div>
 
         <!-- Derecha -->
         <div class="col-md-6">
             <div class="mb-3">
-                <label>Sobre el evento...</label>
+                <label>Descripción del evento</label>
                 <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine" Rows="8" CssClass="form-control" />
             </div>
+            
+            <!-- Sección de Intereses -->
             <div class="mb-3">
-                <asp:FileUpload ID="fuImagen" runat="server" CssClass="form-control" />
-                <small class="text-primary d-block mt-1">
-                    <i class="bi bi-image"></i> Agregar imagen
-                </small>
+                <label>Intereses relacionados</label>
+                <div class="border p-2" style="max-height: 150px; overflow-y: auto;">
+                    <asp:CheckBoxList ID="chkIntereses" runat="server">
+                        <asp:ListItem Text="Tecnología" Value="1" />
+                        <asp:ListItem Text="Deportes" Value="2" />
+                        <asp:ListItem Text="Arte" Value="3" />
+                        <asp:ListItem Text="Ciencia" Value="4" />
+                        <asp:ListItem Text="Música" Value="5" />
+                    </asp:CheckBoxList>
+                </div>
             </div>
+            
             <div class="text-end">
-                <asp:Button ID="btnCrear" runat="server" CssClass="btn btn-primary rounded-pill px-4 fw-bold" Text="Crear" />
+                <asp:Button ID="btnCrear" runat="server" CssClass="btn btn-primary rounded-pill px-4 fw-bold" Text="Crear" OnClick="btnCrear_Click" />
             </div>
         </div>
     </div>
+    
+    <!--Modal exitoso-->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">¡Éxito!</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>El evento se ha creado correctamente.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script para mostrar el modal -->
+    <script type="text/javascript">
+        function showSuccessModal() {
+            var myModal = new bootstrap.Modal(document.getElementById('successModal'), {
+                keyboard: false
+            });
+            myModal.show();
+
+            // Redirigir después de cerrar el modal
+            document.getElementById('successModal').addEventListener('hidden.bs.modal', function () {
+                window.location.href = 'Events.aspx';
+            });
+        }
+    </script>
 </asp:Content>

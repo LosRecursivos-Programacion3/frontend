@@ -69,6 +69,110 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\EventoWS\EventoWS.wsdl" />
+    <None Include="Connected Services\EventoWS\EventoWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\EventoWS\PucpConnectPresentacion.EventoWS.alumno.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EventoWS\PucpConnectPresentacion.EventoWS.buscarEventoPorIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EventoWS\PucpConnectPresentacion.EventoWS.cancelarParticipacionEventoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EventoWS\PucpConnectPresentacion.EventoWS.cancelarParticipacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EventoWS\PucpConnectPresentacion.EventoWS.crearEventoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EventoWS\PucpConnectPresentacion.EventoWS.evento.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EventoWS\PucpConnectPresentacion.EventoWS.interes.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EventoWS\PucpConnectPresentacion.EventoWS.listarEventosPorInteresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EventoWS\PucpConnectPresentacion.EventoWS.listarEventosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EventoWS\PucpConnectPresentacion.EventoWS.listarInteresesPorEventoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EventoWS\PucpConnectPresentacion.EventoWS.listarParticipantesPorEventoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EventoWS\PucpConnectPresentacion.EventoWS.registrarParticipacionEventoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EventoWS\PucpConnectPresentacion.EventoWS.unirseAEventoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EventoWS\PucpConnectPresentacion.EventoWS.verificarParticipacionEventoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\InteresWS\InteresWS.wsdl" />
+    <None Include="Connected Services\InteresWS\InteresWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\InteresWS\PucpConnectPresentacion.InteresWS.interes.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\InteresWS\PucpConnectPresentacion.InteresWS.listarInteresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\MensajeWSReference\configuration91.svcinfo" />
+    <None Include="Connected Services\MensajeWSReference\configuration.svcinfo" />
+    <None Include="Connected Services\EventoWS\configuration91.svcinfo" />
+    <None Include="Connected Services\EventoWS\configuration.svcinfo" />
+    <None Include="Connected Services\EventoWS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\InteresWS\configuration91.svcinfo" />
+    <None Include="Connected Services\InteresWS\configuration.svcinfo" />
+    <None Include="Connected Services\InteresWS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\MensajeWSReference\PucpConnectPresentacion.MensajeWSReference.eliminarMensajeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MensajeWSReference\PucpConnectPresentacion.MensajeWSReference.enviarMensajeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MensajeWSReference\PucpConnectPresentacion.MensajeWSReference.mensajeDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MensajeWSReference\PucpConnectPresentacion.MensajeWSReference.obtenerMensajesEntreUsuariosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\MensajeWSReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\NotificacionWS\configuration91.svcinfo" />
+    <None Include="Connected Services\NotificacionWS\configuration.svcinfo" />
+    <Content Include="Connected Services\NotificacionWS\PucpConnectPresentacion.NotificacionWS.cambiarEstadoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\NotificacionWS\PucpConnectPresentacion.NotificacionWS.marcarComoVistoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\NotificacionWS\PucpConnectPresentacion.NotificacionWS.notificacion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\NotificacionWS\PucpConnectPresentacion.NotificacionWS.obtenerNotificacionesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\NotificacionWS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.autenticarUsuarioResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -153,6 +257,17 @@
     <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.postConAutor.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Connected Services\MensajeWSReference\MensajeWS.wsdl" />
+    <None Include="Connected Services\MensajeWSReference\MensajeWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\PUCPConnectWS\PucpConnectPresentacion.PUCPConnectWS.listarAmigosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\NotificacionWS\NotificacionWS.wsdl" />
+    <None Include="Connected Services\NotificacionWS\NotificacionWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\PUCPConnectWS\UsuarioWS.wsdl" />
     <None Include="Connected Services\PUCPConnectWS\UsuarioWS.xsd">
       <SubType>Designer</SubType>
@@ -163,14 +278,33 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\ReporteWS\configuration91.svcinfo" />
+    <None Include="Connected Services\ReporteWS\configuration.svcinfo" />
+    <Content Include="Connected Services\ReporteWS\PucpConnectPresentacion.ReporteWS.generarReporteEventosConParticipantesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ReporteWS\PucpConnectPresentacion.ReporteWS.generarReportePorcentajeAlumnosPorCarreraResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ReporteWS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="css\Section.css" />
     <Content Include="css\Stories.css" />
+    <Content Include="templates\Chat.aspx" />
     <Content Include="templates\CreateEvent.aspx" />
     <Content Include="templates\CreatePost.aspx" />
     <Content Include="templates\EditProfile.aspx" />
     <Content Include="templates\FriendRequests.aspx" />
+    <Content Include="templates\InteresModify.aspx" />
+    <Content Include="templates\Mensajes.aspx" />
+    <Content Include="templates\ModoMatch.aspx" />
+    <Content Include="templates\Notificaciones.aspx" />
     <Content Include="templates\Profile-Events.aspx" />
     <Content Include="templates\Profile-Friends.aspx" />
+    <Content Include="templates\ProfileModify.aspx" />
+    <Content Include="templates\Reportes.aspx" />
     <Content Include="templates\SelectInterest.aspx" />
     <Content Include="templates\Stories.aspx" />
     <Content Include="templates\BuscarAmigos.aspx" />
@@ -187,10 +321,42 @@
     <Content Include="templates\Login.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\EventoWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\InteresWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\MensajeWSReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\NotificacionWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\PUCPConnectWS\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ReporteWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Chat.Master.cs">
+      <DependentUpon>Chat.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Chat.Master.designer.cs">
+      <DependentUpon>Chat.Master</DependentUpon>
     </Compile>
     <Compile Include="Masters\Create.Master.cs">
       <DependentUpon>Create.Master</DependentUpon>
@@ -198,6 +364,27 @@
     </Compile>
     <Compile Include="Masters\Create.Master.designer.cs">
       <DependentUpon>Create.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MatchLayout.Master.cs">
+      <DependentUpon>MatchLayout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\MatchLayout.Master.designer.cs">
+      <DependentUpon>MatchLayout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ProfileSettings.Master.cs">
+      <DependentUpon>ProfileSettings.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\ProfileSettings.Master.designer.cs">
+      <DependentUpon>ProfileSettings.Master</DependentUpon>
+    </Compile>
+    <Compile Include="templates\Chat.aspx.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\Chat.aspx.designer.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
     </Compile>
     <Compile Include="templates\CreateEvent.aspx.cs">
       <DependentUpon>CreateEvent.aspx</DependentUpon>
@@ -227,6 +414,34 @@
     <Compile Include="templates\FriendRequests.aspx.designer.cs">
       <DependentUpon>FriendRequests.aspx</DependentUpon>
     </Compile>
+    <Compile Include="templates\InteresModify.aspx.cs">
+      <DependentUpon>InteresModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\InteresModify.aspx.designer.cs">
+      <DependentUpon>InteresModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\Mensajes.aspx.cs">
+      <DependentUpon>Mensajes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\Mensajes.aspx.designer.cs">
+      <DependentUpon>Mensajes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\ModoMatch.aspx.cs">
+      <DependentUpon>ModoMatch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\ModoMatch.aspx.designer.cs">
+      <DependentUpon>ModoMatch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\Notificaciones.aspx.cs">
+      <DependentUpon>Notificaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\Notificaciones.aspx.designer.cs">
+      <DependentUpon>Notificaciones.aspx</DependentUpon>
+    </Compile>
     <Compile Include="templates\Profile-Events.aspx.cs">
       <DependentUpon>Profile-Events.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -240,6 +455,20 @@
     </Compile>
     <Compile Include="templates\Profile-Friends.aspx.designer.cs">
       <DependentUpon>Profile-Friends.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\ProfileModify.aspx.cs">
+      <DependentUpon>ProfileModify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\ProfileModify.aspx.designer.cs">
+      <DependentUpon>ProfileModify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\Reportes.aspx.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\Reportes.aspx.designer.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
     </Compile>
     <Compile Include="templates\SelectInterest.aspx.cs">
       <DependentUpon>SelectInterest.aspx</DependentUpon>
@@ -345,6 +574,13 @@
     <Content Include="Masters\MainLayout.Master" />
     <Content Include="Masters\LoginLayout.Master" />
     <Content Include="Masters\Create.Master" />
+    <Content Include="Masters\Chat.Master" />
+    <Content Include="Masters\ProfileSettings.Master" />
+    <Content Include="Masters\MatchLayout.Master" />
+    <None Include="Connected Services\ReporteWS\ReporteWS.wsdl" />
+    <None Include="Connected Services\ReporteWS\ReporteWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
     <Content Include="Masters\Profile.Master" />
     <Content Include="Masters\SectionLayout.Master" />
@@ -368,7 +604,12 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\EventoWS\" />
+    <WCFMetadataStorage Include="Connected Services\InteresWS\" />
+    <WCFMetadataStorage Include="Connected Services\MensajeWSReference\" />
+    <WCFMetadataStorage Include="Connected Services\NotificacionWS\" />
     <WCFMetadataStorage Include="Connected Services\PUCPConnectWS\" />
+    <WCFMetadataStorage Include="Connected Services\ReporteWS\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
