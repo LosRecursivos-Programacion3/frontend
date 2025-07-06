@@ -1,41 +1,87 @@
 using System;
-using System.Web;
 using System.Web.UI;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.UI.WebControls;
-using PucpConnectPresentacion.PUCPConnectWS;
 using PucpConnectPresentacion.ReporteWS;
+
 namespace PucpConnectPresentacion
 {
     public partial class Reportes : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-        }
-        protected void btnEventos_Click(object sender, EventArgs e)
-        {
-            var cliente = new ReporteWSClient();
-            byte[] archivo = cliente.generarReporteEventosConParticipantes();
-
-            MostrarPDF(archivo, "ReporteEventos.pdf");
+            if (!IsPostBack)
+            {
+                lblError.Visible = false;
+            }
         }
 
-        protected void btnCarreras_Click(object sender, EventArgs e)
+        protected void btnIrAlMain_Click(object sender, EventArgs e)
         {
-            var cliente = new ReporteWSClient();
-            byte[] archivo = cliente.generarReportePorcentajeAlumnosPorCarrera();
-
-            MostrarPDF(archivo, "ReporteCarreras.pdf");
+            Response.Redirect("~/templates/Main.aspx");
         }
 
-        private void MostrarPDF(byte[] data, string nombreArchivo)
+        protected void btnDescargarUsuarios_Click(object sender, EventArgs e)
         {
-            Response.Clear();
-            Response.ContentType = "application/pdf";
-            Response.AddHeader("Content-Disposition", "inline; filename=" + nombreArchivo);
-            Response.BinaryWrite(data);
-            Response.End();
+            DownloadReport("Reporte_Usuarios.pdf", () =>
+            {
+                using (var cliente = new ReporteWSClient())
+                {
+                    return cliente.ReporteUsuarios();
+                }
+            });
+        }
+
+        protected void btnDescargarEventos_Click(object sender, EventArgs e)
+        {
+            DownloadReport("Reporte_Eventos.pdf", () =>
+            {
+                using (var cliente = new ReporteWSClient())
+                {
+                    return cliente.generarReporteEventosConParticipantes();
+                }
+            });
+        }
+
+        protected void btnDescargarCarreras_Click(object sender, EventArgs e)
+        {
+            DownloadReport("Reporte_Carreras.pdf", () =>
+            {
+                using (var cliente = new ReporteWSClient())
+                {
+                    return cliente.ReporteCantAlumnosPorCarrera();
+                }
+            });
+        }
+
+        private void DownloadReport(string filename, Func<byte[]> reportGenerator)
+        {
+            try
+            {
+                byte[] archivo = reportGenerator();
+
+                if (archivo != null && archivo.Length > 0)
+                {
+                    Response.Clear();
+                    Response.ContentType = "application/pdf";
+                    Response.AddHeader("Content-Disposition", $"attachment; filename={filename}");
+                    Response.BinaryWrite(archivo);
+                    Response.End();
+                }
+                else
+                {
+                    ShowError($"El reporte {filename} está vacío o no contiene datos");
+                }
+            }
+            catch (Exception ex)
+            {
+                ShowError($"Error al generar el reporte: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"ERROR: {ex}");
+            }
+        }
+
+        private void ShowError(string message)
+        {
+            lblError.Text = message;
+            lblError.Visible = true;
         }
     }
 }
